@@ -1,4 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
+
+
+.header {
+  background-color: #131313;;
+}
+
+.container {
+  padding: 0;
+  min-width: 1260px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  height: 82px;
+  align-items: center;
+}
+
+.menu__logo {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.menu__nav {
+  padding: 0;
+  margin-left: 45px;
+  
+}
+
+.menu__nav a {
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu__nav a:active {
+  color: #E3B873;
+}
+
+.menu__contacts {
+  
+  padding: 0;
+  margin-left: 120px;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #E3B873;
+}
+
+.button {
+  border-radius: 2px;
+  height: 37px;
+  padding: 13px 20px;
+}
+
+.contacts-button  {
+  margin-left: 45px;
+}
+
+.button--primary {
+  border: none;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
