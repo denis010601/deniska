@@ -1,5 +1,5 @@
 {
-  "name": "repair-design",
+  "name": "deniska",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denis010601/denis.git"
+    "url": "git+https://github.com/denis010601/deniska.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/denis010601/denis/issues"
+    "url": "https://github.com/denis010601/deniska/issues"
   },
-  "homepage": "https://github.com/denis010601/denis#readme",
+  "homepage": "https://github.com/denis010601/deniska#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
   },

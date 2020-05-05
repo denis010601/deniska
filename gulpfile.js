@@ -6,7 +6,6 @@ gulp.task('hello', function(done){
   done();
 });
 
-
 gulp.task('browser-sync', function() {
   browserSync.init({
       server: {
