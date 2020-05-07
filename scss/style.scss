@@ -2,9 +2,16 @@
 @import 'variables';
 @import 'grid';
 @import 'templates/header';
+@import 'templates/hero';
 @import 'templates/interface';
+@import 'fonts';
 
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  font-family: sans-serif;
+  font-family: 'Futura Book',sans-serif;
   font-size: 14px;
+  color: $light;
 }
