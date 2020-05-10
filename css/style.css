@@ -354,12 +354,15 @@ template {
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  color: #ffffff; }
   .hero::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__instagram {
     position: absolute;
@@ -465,5 +468,19 @@ template {
 
 body {
   font-family: 'Futura Book',sans-serif;
-  font-size: 14px;
-  color: #ffffff; }
+  font-size: 14px; }
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::after, .section-title__image::before {
+      content: '';
+      width: 30px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: 0 10px; }
