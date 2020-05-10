@@ -326,13 +326,18 @@ template {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'FuturaDemiC', sans-serif;
+  font-weight: 500; }
 
 .nav__item {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
@@ -350,6 +355,12 @@ template {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center;
   background-size: cover;
   height: 100vh; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__instagram {
     position: absolute;
     top: 0;
@@ -357,6 +368,7 @@ template {
     max-width: 80px;
     height: 100%; }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     font-size: 22px;
@@ -374,9 +386,18 @@ template {
     min-height: 97px;
     font-size: 12px;
     background-color: #131313;
+    font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
+    .hero__scroll-down::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px;
+      background: url(../img/down_arrow.svg) no-repeat center; }
 
 .instagram {
   background-color: #131313;
@@ -384,10 +405,18 @@ template {
   justify-content: center;
   align-items: center; }
   .instagram__link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -400,10 +429,18 @@ template {
 .button {
   padding: 13px 20px;
   border: none;
-  border-radius: 2px; }
+  border-radius: 2px;
+  text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
-    color: #ffffff; }
+    color: #ffffff;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.2s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;

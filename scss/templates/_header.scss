@@ -18,6 +18,8 @@
 .logo {
   color: $primary;
   text-transform: uppercase;
+  font-family: 'FuturaDemiC', sans-serif;
+  font-weight: 500;
 }
 
 .nav {
@@ -26,6 +28,10 @@
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 40px;
+    transition: color 0.2s;
+    &:hover {
+      color: $primary;
+    } 
   }
 }
 
