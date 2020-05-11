@@ -52,6 +52,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $light;
+    transition: color 0.2s;
     &::after {
       content: '';
       width: 30px;
@@ -60,6 +61,9 @@
       border-radius: 50%;
       margin-left: 12px;
       background: url(../img/down_arrow.svg) no-repeat center;
+    }
+    &:hover {
+      color: $primary;
     }
   }
 }
@@ -76,12 +80,17 @@
       text-decoration: none;
       color: $primary;
       transform: rotate(90deg);
+      transition: color 0.2s;
       &::after {
         content: '';
         width: 50px;
         height: 1px;
         background-color: $primary;
         margin-left: 8px;
+        
+      }
+      &:hover {
+        color: $light;
       }
     }
 }
