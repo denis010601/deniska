@@ -1,15 +1,35 @@
 .hero {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
-  background: $dark url('../img/hero-bg.jpg') no-repeat center;
-  background-size: cover;
+  
+  padding-top: 90px;
   height: 100vh;
   color: $light;
-  &::before {
+  &::after{
+    content: '';
+    width: 100%;
+    height: 58px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: $dark;
+  }
+  &__instagram {
+    max-width: 80px;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    background: $dark url('../img/hero-bg.jpg') no-repeat center;
+    background-size: cover;
+    &::before {
       content: '';
       position: absolute;
       width: 100%;
@@ -18,23 +38,27 @@
       left: 0;
       background-color: rgba($dark, 0.7);
   }
-  &__instagram {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 80px;
-    height: 100%;
-    
   }
-  &__content {
+
+  &__title {
+    max-width: 500px;
     position: relative;
-    max-width: 670px;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    &--primary {
+      color: $primary;
+    }
   }
+
   &__text {
+    position: relative;
     font-size: 22px;
     max-width: 500px;
   }
   &__button {
+    position: relative;
     margin-right: 20px;
   }
   &__scroll-down {
@@ -95,12 +119,3 @@
     }
 }
 
-.title {
-  margin: 0;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-size: 40px;
-  &--primary {
-    color: $primary;
-  }
-}
