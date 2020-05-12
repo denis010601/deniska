@@ -1,12 +1,83 @@
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
   left: 0;
   top: 0;
   width: 100%;
   background-color: $dark;
-  padding: 24px 0;
   z-index: 99;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 24px 0;
+  
+}
+
+.logo {
+  a {
+  color: $primary;
+  text-transform: uppercase;
+  font-family: 'FuturaDemiC', sans-serif;
+  font-size: 0.87rem;
+  margin-right: 1.07rem;
+  font-weight: 500;
+  text-decoration: none;
+  }
+}
+
+.nav {
+  
+  &__item {
+    color: $light;
+    font-family: 'FuturaBookC', sans-serif;
+    font-weight: normal;
+    font-size: 0.87rem;
+    font-stretch: ultra-expanded;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 2.642rem;
+    transition: color 0.2s;
+    &:hover {
+      color: $primary;
+    } 
+  }
+}
+
+.phone {
+  color: $primary;
+  font-family: 'FuturaDemiC', sans-serif;
+} 
+
+.contacts {
+  
+  &__phone {
+    display: inline-block;
+    position: relative;
+    
+    margin-right: 45px;
+    font-weight: 500;
+    transition: color 0.2s;
+    &:hover {
+      color: $light;
+    }
+  }
+  &-button{
+    padding: 12px 21px;
+  }
+} 
+
+/*.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $dark;
+  z-index: 99;
+  
 }
 
 .menu {
@@ -65,6 +136,6 @@
   &-button{
     padding: 12px 20px;
   }
-}
-
+} 
+*/
 

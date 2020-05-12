@@ -6,9 +6,30 @@
   }
 }
 
-@media screen and (max-width:1221px){
+@media screen and (max-width:1278px){
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:1200px){
   html {
     font-size: 11px;
+
+  }
+
+  .menu {
+    &__nav {
+      margin-right: 0.5rem;
+    }
+  }
+  .logo {
+    margin-right: 1.2rem ;
+  }
+  .contacts {
+    &__phone {
+      margin-right: 1.3rem;
+    }
   }
 }
 
@@ -32,6 +53,7 @@
   html {
     font-size: 12px;
   }
+  
   .menu {
     &__contacts {
       .contacts__phone {
@@ -47,7 +69,7 @@
   }
 
   .hero {
-    padding-top: 65px;
+    padding-top: 60px;
     &__content {
       padding-left: 1.28rem;
       padding-right: 1.28rem;
