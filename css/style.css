@@ -532,6 +532,10 @@ body {
       background-color: #E3B873;
       margin: 0 10px; }
 
+@media screen and (max-height: 600px) {
+  .hero__scroll-down {
+    display: none; } }
+
 @media screen and (max-width: 1221px) {
   html {
     font-size: 11px; } }

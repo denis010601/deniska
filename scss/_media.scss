@@ -1,3 +1,11 @@
+@media screen and (max-height:600px){
+  .hero {
+    &__scroll-down{
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width:1221px){
   html {
     font-size: 11px;
