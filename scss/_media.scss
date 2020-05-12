@@ -1,0 +1,89 @@
+@media screen and (max-width:1221px){
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:992px){
+  .menu {
+    &__nav {
+      display: none;
+    }
+  }
+  .hero {
+    &__instagram {
+      display: none;
+    }
+    &__scroll-down{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  html {
+    font-size: 12px;
+  }
+  .menu {
+    &__contacts {
+      .contacts__phone {
+        text-decoration: none;
+        color: $light;
+        margin-right: 0;
+      }
+      .contacts-button {
+        display: none;
+      }
+    }
+    
+  }
+
+  .hero {
+    padding-top: 65px;
+    &__content {
+      padding-left: 1.28rem;
+      padding-right: 1.28rem;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+      .button--primary {
+        box-shadow: none;
+        margin-right: 0;
+        margin-bottom: 26px;
+      }
+      .button--outline {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:576px){
+  html {
+    font-size: 14px;
+  }
+
+  .menu {
+    &__logo {
+      font-size: 0.857rem;
+    }
+
+  }
+
+  .hero {
+    &__content {
+      padding-left: 1.28rem;
+      padding-right: 1.28rem;
+    }
+    &__title {
+      font-size: 1.642rem;
+      max-width: 24.21rem;
+    }
+    &__text {
+      font-size: 1.28rem;
+      max-width: 22.92rem;
+    }
+  }
+}
