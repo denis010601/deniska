@@ -11,13 +11,25 @@ body {
   font-size: 1rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+sup {
+  top: -0.8em;
+  font-size: 0.6rem;
+  padding-left: 0.05rem;
+}
+
 .section {
-  &-title {
-    
+  padding: 60px 0;
+  &-title { 
+    font-size: 0.95rem;  
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     &__image {
+      margin-top: -0.3rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,8 +40,16 @@ body {
         background-color: $primary;
         margin: 0 10px;
       }
-
     }
+    
   }
-
+  &-info {
+    margin: auto;
+    text-align: center;
+    font-size: 1.23rem;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.92rem;
+    font-family: 'FuturaBookC',sans-serif;
+  }
 }

@@ -1,0 +1,60 @@
+.types {
+  &__section-title {
+    margin-bottom: 2.21rem;
+  }
+  &__card--pricetag{
+    padding: 1.21rem 2.5rem;
+    bottom: -1.7rem;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 32%;
+}
+
+.card {
+  &__text {
+    position: relative;
+    max-width: 23.52rem;
+    margin: -9.34rem auto 0 auto;
+    padding: 1.78rem 1.89rem;
+    background-color: $light;
+    box-shadow: 10px 10px 20px rgba($dark,0.03);
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.28rem;
+    color: #363636;
+  }
+
+  &__list {
+    padding: 0.7rem 0 0 1rem;
+    margin: 0;
+    font-family: 'FuturaBookC' ,sans-serif;
+    font-size: 0.9rem;
+    word-spacing: 0.2rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    color: $secondary;
+    margin-bottom: 2.43rem;
+  }
+  &__pricetag {
+    position: absolute;
+    left: 0;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.28rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $light;
+    background-color: $primary;
+  }
+}
+
