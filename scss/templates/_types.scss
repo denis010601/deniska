@@ -19,6 +19,10 @@
 }
 
 .card {
+  &__image {
+    position: relative;
+    background-color: $dark;
+  }
   &__text {
     position: relative;
     max-width: 23.52rem;
