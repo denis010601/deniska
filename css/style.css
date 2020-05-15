@@ -306,7 +306,7 @@ template {
 
 .container {
   width: 90%;
-  max-width: 1265px;
+  max-width: 1240px;
   margin: auto; }
 
 .header {
@@ -547,7 +547,7 @@ template {
   margin-bottom: 2.21rem; }
 
 .types__card--pricetag {
-  padding: 1.21rem 2.5rem;
+  padding: 1.21rem 2.5rem 1.21rem;
   bottom: -1.7rem; }
 
 .row {
@@ -556,42 +556,47 @@ template {
   justify-content: space-between; }
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 31.6%; }
 
-.card__text {
-  position: relative;
-  max-width: 23.52rem;
-  margin: -9.34rem auto 0 auto;
-  padding: 1.78rem 1.89rem;
-  background-color: #ffffff;
-  box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03); }
-
-.card__title {
-  margin: 0;
-  font-family: 'Yeseva One', sans-serif;
-  font-size: 1.28rem;
-  color: #363636; }
-
-.card__list {
-  padding: 0.7rem 0 0 1rem;
-  margin: 0;
-  font-family: 'FuturaBookC' ,sans-serif;
-  font-size: 0.9rem;
-  word-spacing: 0.2rem;
-  font-weight: normal;
-  line-height: 1.8rem;
-  color: #959595;
-  margin-bottom: 2.43rem; }
-
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.28rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #E3B873; }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    width: 23.5rem;
+    max-width: 23.52rem;
+    margin: -9.1rem auto 0 auto;
+    padding: 1.78rem 2.1rem;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03); }
+  .card__title {
+    margin: 0;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.28rem;
+    color: #363636; }
+  .card__list {
+    padding: 0.7rem 0 0 1rem;
+    margin: 0;
+    font-family: 'FuturaBookC' ,sans-serif;
+    font-size: 0.9rem;
+    word-spacing: 0.2rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    color: #959595;
+    margin-bottom: 2.43rem; }
+  .card__pricetag {
+    position: absolute;
+    left: 0;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.28rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #E3B873; }
 
 .design__section-title {
   margin-bottom: 2.21rem; }
@@ -632,6 +637,28 @@ template {
     .button--outline:hover {
       box-shadow: none; }
 
+.label--light {
+  font-size: 1.07rem;
+  color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  border: none;
+  border-bottom: 2px solid rgba(58, 58, 58, 0.6);
+  background-color: transparent;
+  font-size: 1.285rem;
+  color: #ffffff;
+  padding: 0.3rem 0 0.7rem; }
+  .input::-webkit-input-placeholder {
+    color: #ffffff; }
+  .input::-moz-placeholder {
+    color: #ffffff; }
+  .input:-ms-input-placeholder {
+    color: #ffffff; }
+  .input::-ms-input-placeholder {
+    color: #ffffff; }
+  .input::placeholder {
+    color: #ffffff; }
+
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
@@ -663,14 +690,14 @@ sup {
   padding-left: 0.05rem; }
 
 .section {
-  padding: 60px 0; }
+  padding: 55px 0; }
   .section-title {
     font-size: 0.95rem;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
     .section-title__image {
-      margin-top: -0.3rem;
+      margin-top: 0;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -784,3 +811,76 @@ sup {
       font-size: 1.58rem;
       max-width: 28rem;
       line-height: 140%; } }
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal__dialog {
+    position: relative;
+    background: #181818 url("/img/bgcVector.svg") no-repeat center;
+    padding: 1.9rem 3.5rem 2.7rem;
+    color: #ffffff;
+    max-width: 36rem; }
+  .modal__close {
+    position: absolute;
+    margin: 12px;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer; }
+  .modal__title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.357rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 5px;
+    margin-bottom: 1.9rem; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.228rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 0; }
+  .modal .policy {
+    margin-top: -0.2857rem; }
+    .modal .policy__checkbox {
+      opacity: 0;
+      visibility: hidden; }
+      .modal .policy__checkbox:checked + .policy__label::before {
+        background: #E3B873 url("../img/check.svg") no-repeat center; }
+    .modal .policy__label {
+      display: flex;
+      align-items: center;
+      font-size: 1.18rem; }
+      .modal .policy__label::before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border: 1px solid #E3B873;
+        border-radius: 1px;
+        cursor: pointer;
+        margin-left: -0.1428rem;
+        margin-right: 0.64rem; }
+  .modal__policy {
+    margin-bottom: 2.78rem; }
+  .modal__button {
+    align-self: flex-end;
+    padding: 1.35rem 2.9rem; }

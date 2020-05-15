@@ -3,7 +3,7 @@
     margin-bottom: 2.21rem;
   }
   &__card--pricetag{
-    padding: 1.21rem 2.5rem;
+    padding: 1.21rem 2.5rem 1.21rem;
     bottom: -1.7rem;
   }
 }
@@ -15,15 +15,23 @@
 }
 
 .col {
-  flex-basis: 32%;
+  flex-basis: 31.6%;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     position: relative;
+    width: 23.5rem;
     max-width: 23.52rem;
-    margin: -9.34rem auto 0 auto;
-    padding: 1.78rem 1.89rem;
+    margin: -9.1rem auto 0 auto;
+    padding: 1.78rem 2.1rem;
     background-color: $light;
     box-shadow: 10px 10px 20px rgba($dark,0.03);
   }
