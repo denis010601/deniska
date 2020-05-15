@@ -9,7 +9,8 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Sections
    ========================================================================== */
@@ -17,13 +18,15 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Render the `main` element consistently in IE.
  */
 main {
-  display: block; }
+  display: block;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -31,7 +34,8 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -45,7 +49,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -55,7 +60,8 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -63,7 +69,8 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -74,16 +81,17 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -95,13 +103,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -112,13 +122,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -126,7 +139,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /* Forms
    ========================================================================== */
@@ -146,7 +160,8 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Show the overflow in IE.
@@ -155,7 +170,8 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -164,7 +180,8 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -173,7 +190,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -183,7 +201,8 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -192,13 +211,15 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em; }
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -218,19 +239,22 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10.
@@ -241,14 +265,16 @@ textarea {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -258,13 +284,15 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -274,7 +302,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -282,13 +311,15 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-  display: block; }
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item; }
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -296,220 +327,21 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none; }
+  display: none;
+}
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 .container {
   width: 90%;
   max-width: 1265px;
-  margin: auto; }
-
-.button {
-  border: none;
-  border-radius: 2px;
-  font-weight: 500;
-  font-size: 0.928rem;
-  font-family: 'FuturaDemiC', italic;
-  text-transform: uppercase; }
-  .button:hover {
-    cursor: pointer; }
-  .button:active, .button:focus {
-    outline: 0 none; }
-  .button--primary {
-    background-color: #E3B873;
-    color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.2s; }
-    .button--primary:hover {
-      box-shadow: none; }
-  .button--outline {
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
-    transition: box-shadow 0.2s; }
-    .button--outline:hover {
-      box-shadow: none; }
-
-.label--light {
-  font-size: 1.07rem;
-  color: rgba(255, 255, 255, 0.5); }
-
-.input {
-  border: none;
-  border-bottom: 2px solid rgba(58, 58, 58, 0.6);
-  background-color: transparent;
-  font-size: 1.285rem;
-  color: #ffffff;
-  padding: 0.3rem 0 0.7rem; }
-  .input::-webkit-input-placeholder {
-    color: #ffffff; }
-  .input::-moz-placeholder {
-    color: #ffffff; }
-  .input:-ms-input-placeholder {
-    color: #ffffff; }
-  .input::-ms-input-placeholder {
-    color: #ffffff; }
-  .input::placeholder {
-    color: #ffffff; }
-
-@font-face {
-  font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-html {
-  font-size: 14px; }
-
-body {
-  font-family: 'Futura Book',sans-serif;
-  font-size: 1rem; }
-
-img {
-  max-width: 100%; }
-
-sup {
-  top: -0.8em;
-  font-size: 0.6rem;
-  padding-left: 0.05rem; }
-
-.section {
-  padding: 60px 0; }
-  .section-title {
-    font-size: 0.95rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
-    .section-title__image {
-      margin-top: -0.3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .section-title__image::after, .section-title__image::before {
-        content: '';
-        width: 30px;
-        height: 2px;
-        background-color: #E3B873;
-        margin: 0 10px; }
-  .section-info {
-    margin: auto;
-    text-align: center;
-    font-size: 1.23rem;
-    font-weight: normal;
-    text-transform: none;
-    line-height: 1.92rem;
-    font-family: 'FuturaBookC',sans-serif; }
-
-@media screen and (max-height: 600px) {
-  .hero__scroll-down {
-    display: none; } }
-
-@media screen and (max-width: 1278px) {
-  html {
-    font-size: 13px; } }
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 11px; }
-  .menu__nav {
-    margin-right: 0.5rem; }
-  .logo {
-    margin-right: 1.2rem; }
-  .contacts__phone {
-    margin-right: 1.3rem; } }
-
-@media screen and (max-width: 992px) {
-  html {
-    font-size: 10px; }
-  .menu__nav {
-    display: none; }
-  .hero__instagram {
-    display: none; }
-  .hero__scroll-down {
-    display: none; } }
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 12px; }
-  .section {
-    padding: 60px 0; }
-    .section-title {
-      font-size: 1.2rem;
-      margin-bottom: 0.2rem; }
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5.21rem; }
-  .design__card {
-    margin-bottom: 4.21rem; }
-  .design__col:nth-child(3) li:nth-child(n+8) {
-    display: none; }
-  .design__col:nth-child(3) li:nth-child(7)::after {
-    content: '...'; }
-  .design__card--pricetag {
-    padding: 0.85rem 3.84rem;
-    bottom: -1.7rem; }
-  .card__text {
-    margin-left: 0;
-    margin-top: -12.34rem;
-    padding: 1.98rem 2.55rem; }
-  .menu__contacts .contacts__phone {
-    text-decoration: none;
-    color: #ffffff;
-    margin-right: 0; }
-  .menu__contacts .contacts-button {
-    display: none; }
-  .hero {
-    padding-top: 60px; }
-    .hero__content {
-      padding-left: 1.28rem;
-      padding-right: 1.28rem; }
-    .hero__buttons {
-      display: flex;
-      flex-direction: column;
-      margin-right: 0; }
-      .hero__buttons .button--primary {
-        box-shadow: none;
-        margin-right: 0;
-        margin-bottom: 26px; }
-      .hero__buttons .button--outline {
-        box-shadow: none; } }
-
-@media screen and (max-width: 576px) {
-  html {
-    font-size: 12px; }
-  .menu__logo {
-    font-size: 0.2rem; }
-  .hero {
-    margin-top: -1.45rem; }
-    .hero__content {
-      padding-left: 1.28rem;
-      padding-right: 1.28rem; }
-    .hero__title {
-      font-size: 1.742rem;
-      max-width: 24.21rem;
-      line-height: 150%; }
-    .hero__text {
-      font-size: 1.58rem;
-      max-width: 28rem;
-      line-height: 140%; } }
+  margin: auto;
+}
 
 .header {
   position: fixed;
@@ -519,13 +351,15 @@ sup {
   top: 0;
   width: 100%;
   background-color: #131313;
-  z-index: 99; }
+  z-index: 99;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0; }
+  padding: 24px 0;
+}
 
 .logo a {
   color: #E3B873;
@@ -534,7 +368,8 @@ sup {
   font-size: 0.87rem;
   margin-right: 1.07rem;
   font-weight: 500;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .nav__item {
   color: #ffffff;
@@ -545,25 +380,33 @@ sup {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 2.642rem;
-  transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
+}
 
 .phone {
   color: #E3B873;
-  font-family: 'FuturaDemiC', sans-serif; }
+  font-family: 'FuturaDemiC', sans-serif;
+}
 
 .contacts__phone {
   display: inline-block;
   position: relative;
   margin-right: 45px;
   font-weight: 500;
-  transition: color 0.2s; }
-  .contacts__phone:hover {
-    color: #ffffff; }
+  transition: color 0.2s;
+}
+
+.contacts__phone:hover {
+  color: #ffffff;
+}
 
 .contacts-button {
-  padding: 12px 21px; }
+  padding: 12px 21px;
+}
 
 /*.header {
   position: fixed;
@@ -638,131 +481,170 @@ sup {
   display: flex;
   padding-top: 95px;
   height: 100vh;
-  color: #ffffff; }
-  .hero::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #131313; }
-  .hero__instagram {
-    margin-top: -36px;
-    max-width: 80px;
-    height: 100%; }
-  .hero__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -17px;
-    padding-left: 4.28rem;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: #131313 url("../img/hero-bg.jpg") no-repeat center;
-    background-size: cover; }
-    .hero__content::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgba(19, 19, 19, 0.8); }
-  .hero__title {
-    max-width: 47.85rem;
-    position: relative;
-    margin: 0;
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 2.857rem;
-    line-height: 135%; }
-    .hero__title--primary {
-      color: #E3B873; }
-  .hero__text {
-    margin-top: 1.315rem;
-    margin-bottom: 3.2rem;
-    position: relative;
-    line-height: 135%;
-    font-size: 1.571rem;
-    max-width: 35.714rem; }
-  .hero__buttons {
-    position: relative; }
-    .hero__buttons .button--primary {
-      padding: 19px 22px;
-      margin-right: 16px; }
-    .hero__buttons .button--outline {
-      padding: 19px 37px; }
-  .hero__scroll-down {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
-    font-size: 0.857rem;
-    background-color: #131313;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.2s; }
-    .hero__scroll-down::after {
-      content: '';
-      width: 30px;
-      height: 30px;
-      border: 2px solid #E3B873;
-      border-radius: 50%;
-      margin-left: 18px;
-      background: url(../img/down_arrow.svg) no-repeat center; }
-    .hero__scroll-down:hover {
-      color: #E3B873; }
+  color: #ffffff;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #131313;
+}
+
+.hero__instagram {
+  margin-top: -36px;
+  max-width: 80px;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -17px;
+  padding-left: 4.28rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero__content::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+
+.hero__title {
+  max-width: 47.85rem;
+  position: relative;
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2.857rem;
+  line-height: 135%;
+}
+
+.hero__title--primary {
+  color: #E3B873;
+}
+
+.hero__text {
+  margin-top: 1.315rem;
+  margin-bottom: 3.2rem;
+  position: relative;
+  line-height: 135%;
+  font-size: 1.571rem;
+  max-width: 35.714rem;
+}
+
+.hero__buttons {
+  position: relative;
+}
+
+.hero__buttons .button--primary {
+  padding: 19px 22px;
+  margin-right: 16px;
+}
+
+.hero__buttons .button--outline {
+  padding: 19px 37px;
+}
+
+.hero__scroll-down {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  min-width: 247px;
+  min-height: 97px;
+  font-size: 0.857rem;
+  background-color: #131313;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.hero__scroll-down::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 18px;
+  background: url(../img/down_arrow.svg) no-repeat center;
+}
+
+.hero__scroll-down:hover {
+  color: #E3B873;
+}
 
 .instagram {
   background-color: #131313;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .instagram__link {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 1.05rem;
-    text-decoration: none;
-    color: #E3B873;
-    transform: rotate(90deg);
-    transition: color 0.2s; }
-    .instagram__link::after {
-      content: '';
-      width: 50px;
-      height: 1px;
-      background-color: #E3B873;
-      margin-left: 16px; }
-    .instagram__link:hover {
-      color: #ffffff; }
+  align-items: center;
+}
+
+.instagram__link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #E3B873;
+  transform: rotate(90deg);
+  transition: color 0.2s;
+}
+
+.instagram__link::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-left: 16px;
+}
+
+.instagram__link:hover {
+  color: #ffffff;
+}
 
 .types__section-title {
-  margin-bottom: 2.21rem; }
+  margin-bottom: 2.21rem;
+}
 
 .types__card--pricetag {
   padding: 1.21rem 2.5rem;
-  bottom: -1.7rem; }
+  bottom: -1.7rem;
+}
 
 .row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 32%;
+}
 
 .card__image {
   position: relative;
-  background-color: #131313; }
+  background-color: #131313;
+}
 
 .card__text {
   position: relative;
@@ -770,13 +652,15 @@ sup {
   margin: -9.34rem auto 0 auto;
   padding: 1.78rem 1.89rem;
   background-color: #ffffff;
-  box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03); }
+  box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03);
+}
 
 .card__title {
   margin: 0;
   font-family: 'Yeseva One', sans-serif;
   font-size: 1.28rem;
-  color: #363636; }
+  color: #363636;
+}
 
 .card__list {
   padding: 0.7rem 0 0 1rem;
@@ -787,7 +671,8 @@ sup {
   font-weight: normal;
   line-height: 1.8rem;
   color: #959595;
-  margin-bottom: 2.43rem; }
+  margin-bottom: 2.43rem;
+}
 
 .card__pricetag {
   position: absolute;
@@ -797,21 +682,31 @@ sup {
   font-weight: normal;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #E3B873; }
+  background-color: #E3B873;
+}
 
 .design {
-  background: linear-gradient(#ffffff 50%, #131313 50%); }
-  .design__section-title {
-    margin-bottom: 2.21rem; }
-  .design__card--pricetag {
-    padding: 1.21rem 5.7rem 1.21rem 2.36rem;
-    bottom: -1.7rem;
-    left: 0; }
-  .design__section-info {
-    padding: 1rem 0 3.4rem 0;
-    max-width: 52.57rem; }
+  background: linear-gradient(#ffffff 50%, #131313 50%);
+}
+
+.design__section-title {
+  margin-bottom: 2.21rem;
+}
+
+.design__card--pricetag {
+  padding: 1.21rem 5.7rem 1.21rem 2.36rem;
+  bottom: -1.7rem;
+  left: 0;
+}
+
+.design__section-info {
+  padding: 1rem 0 3.4rem 0;
+  max-width: 52.57rem;
+}
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -821,57 +716,354 @@ sup {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .modal__dialog {
-    position: relative;
-    background: #181818 url("/img/bgcVector.svg") no-repeat center;
-    padding: 2.2rem 3.8rem 2.7rem;
-    color: #ffffff;
-    max-width: 36.36rem; }
-  .modal__close {
-    position: absolute;
-    margin: 12px;
-    right: 0;
-    top: 0;
-    width: 28px;
-    height: 28px;
-    background: transparent url("../img/close.svg") no-repeat center;
-    border: none;
-    cursor: pointer; }
-  .modal__title {
-    font-family: 'Yeseva One', sans-serif;
-    font-size: 1.357rem;
-    font-weight: normal;
-    text-align: center;
-    line-height: 2rem;
-    margin: 0;
-    margin-bottom: 1.9rem; }
-  .modal__form {
+  justify-content: center;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__dialog {
+  position: relative;
+  background: #181818 url("/img/bgcVector.svg") no-repeat center;
+  padding: 2.2rem 3.8rem 2.7rem;
+  color: #ffffff;
+  max-width: 36.36rem;
+}
+
+.modal__close {
+  position: absolute;
+  margin: 12px;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/close.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 1.357rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2rem;
+  margin: 0;
+  margin-bottom: 1.9rem;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  margin-bottom: 3.228rem;
+}
+
+.modal__input:last-of-type {
+  margin-bottom: -0.2rem;
+}
+
+.modal .policy__checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal .policy__checkbox:checked + .policy__label::before {
+  background: #E3B873 url("../img/check.svg") no-repeat center;
+}
+
+.modal .policy__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.14rem;
+}
+
+.modal .policy__label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 0.64rem;
+}
+
+.modal__policy {
+  margin-bottom: 2.78rem;
+}
+
+.modal__button {
+  align-self: flex-end;
+  padding: 1.35rem 2.8rem;
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 0.928rem;
+  font-family: 'FuturaDemiC', italic;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active, .button:focus {
+  outline: 0 none;
+}
+
+.button--primary {
+  background-color: #E3B873;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  transition: box-shadow 0.2s;
+}
+
+.button--primary:hover {
+  box-shadow: none;
+}
+
+.button--outline {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.button--outline:hover {
+  box-shadow: none;
+}
+
+.label--light {
+  font-size: 1.07rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid rgba(58, 58, 58, 0.6);
+  background-color: transparent;
+  font-size: 1.285rem;
+  color: #ffffff;
+  padding: 0.3rem 0 0.7rem;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Futura Book',sans-serif;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+sup {
+  top: -0.8em;
+  font-size: 0.6rem;
+  padding-left: 0.05rem;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 0.95rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+}
+
+.section-title__image {
+  margin-top: -0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title__image::after, .section-title__image::before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #E3B873;
+  margin: 0 10px;
+}
+
+.section-info {
+  margin: auto;
+  text-align: center;
+  font-size: 1.23rem;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.92rem;
+  font-family: 'FuturaBookC',sans-serif;
+}
+
+@media screen and (max-height: 600px) {
+  .hero__scroll-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 11px;
+  }
+  .menu__nav {
+    margin-right: 0.5rem;
+  }
+  .logo {
+    margin-right: 1.2rem;
+  }
+  .contacts__phone {
+    margin-right: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+  .menu__nav {
+    display: none;
+  }
+  .hero__instagram {
+    display: none;
+  }
+  .hero__scroll-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .row {
     display: flex;
-    flex-direction: column; }
-  .modal__input {
-    margin-bottom: 3.228rem; }
-    .modal__input:last-of-type {
-      margin-bottom: -0.2rem; }
-  .modal .policy__checkbox {
-    opacity: 0;
-    visibility: hidden; }
-    .modal .policy__checkbox:checked + .policy__label::before {
-      background: #E3B873 url("../img/check.svg") no-repeat center; }
-  .modal .policy__label {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.14rem; }
-    .modal .policy__label::before {
-      content: '';
-      width: 18px;
-      height: 18px;
-      border: 1px solid #E3B873;
-      border-radius: 1px;
-      cursor: pointer;
-      margin-right: 0.64rem; }
-  .modal__policy {
-    margin-bottom: 2.78rem; }
-  .modal__button {
-    align-self: flex-end;
-    padding: 1.35rem 2.8rem; }
+  }
+  .types__card {
+    margin-bottom: 5.21rem;
+  }
+  .design__card {
+    margin-bottom: 4.21rem;
+  }
+  .design__col:nth-child(3) li:nth-child(n+8) {
+    display: none;
+  }
+  .design__col:nth-child(3) li:nth-child(7)::after {
+    content: '...';
+  }
+  .design__card--pricetag {
+    padding: 0.85rem 3.84rem;
+    bottom: -1.7rem;
+  }
+  .card__text {
+    margin-left: 0;
+    margin-top: -12.34rem;
+    padding: 1.98rem 2.55rem;
+  }
+  .menu__contacts .contacts__phone {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 0;
+  }
+  .menu__contacts .contacts-button {
+    display: none;
+  }
+  .hero {
+    padding-top: 60px;
+  }
+  .hero__content {
+    padding-left: 1.28rem;
+    padding-right: 1.28rem;
+  }
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .hero__buttons .button--primary {
+    box-shadow: none;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+  .hero__buttons .button--outline {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  .menu__logo {
+    font-size: 0.2rem;
+  }
+  .hero {
+    margin-top: -1.45rem;
+  }
+  .hero__content {
+    padding-left: 1.28rem;
+    padding-right: 1.28rem;
+  }
+  .hero__title {
+    font-size: 1.742rem;
+    max-width: 24.21rem;
+    line-height: 150%;
+  }
+  .hero__text {
+    font-size: 1.58rem;
+    max-width: 28rem;
+    line-height: 140%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

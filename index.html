@@ -24,7 +24,7 @@
         <!-- /.nav -->
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts-button button--primary">Заказать звонок</button>
+          <button class="button contacts-button button--primary " data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -43,7 +43,7 @@
             <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
             <div class="hero__buttons">
               <button class="button hero__button button--primary">Рассчитать стоимость</button>
-              <button class="button hero__button button--outline">Отправить заявку</button>
+              <button class="button hero__button button--outline" data-toggle="modal">Отправить заявку</button>
             </div>
           </div>
         
@@ -254,7 +254,7 @@
               <!-- /.col -->
               <div class="col design__col">
                 <div class="card design__card">
-                  <div class=""><img src="img/type-3.1.jpg" alt="Полный" class="card__image.design__card-image"></div>
+                  <div class=""><img src="img/type-3.1.jpg" alt="Полный" class="card__image design__card-image"></div>
                   <div class="card__text">
                     <h3 class="card__title">Полный</h3>
                     <!-- /.card__title -->
@@ -307,7 +307,7 @@
         <h2 class="modal__title">
           Оставьте заявку и наш менеджер свяжется с вами 
         </h2>
-        <form action="#" class="form modal__form">
+        <form action="#" class="form modal__form" >
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:" >
           <label for="user-phone" class="label form__label label--light">Телефон</label>
@@ -332,5 +332,6 @@
     </div>
     <!-- /.modal modal__dialog -->
   </main>  
+  <script src="js/main.js"></script>
 </body>
 </html>

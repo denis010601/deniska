@@ -1,4 +1,6 @@
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -9,7 +11,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+  }
   &__dialog {
     position: relative;
     background: #181818 url('/img/bgcVector.svg') no-repeat center;;
