@@ -841,6 +841,16 @@ sup {
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px; }
+  .back-to-top {
+    display: none;
+    position: fixed;
+    left: 5px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px; }
+    .back-to-top::after {
+      width: 10px;
+      height: 10px; }
   .section {
     padding: 60px 0; }
     .section-title {
