@@ -18,24 +18,6 @@
   }
 });*/
 
-function backToTop() {
-  let button = $('.back-to-top');
-
-  $(window).on('scroll', () => {
-    if ($(this).scrollTop() >= 70) {
-      button.fadeIn();
-    } else {
-      button.fadeOut();
-    }
-  });
-
-  button.on ('click', (e) => {
-    e.preventDefault ();
-    $('html').animate({scrollTop: 0}, 1000);
-  });
-}
-
-backToTop();
 
 
 
@@ -54,6 +36,46 @@ $(document).ready(function (){
   closeBtn.on('click', function (){
     modal.toggleClass('modal--visible');
   });
+  
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+
+  next.css ('left', prev.width() + 15 + bullets.width() + 30)
+  bullets.css('left', prev.width() + 15)
+
 });
 
 
+function backToTop() {
+  let button = $('.back-to-top');
+
+  $(window).on('scroll', () => {
+    if ($(this).scrollTop() >= 70) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });
+
+  button.on ('click', (e) => {
+    e.preventDefault ();
+    $('html').animate({scrollTop: 0}, 1000);
+  });
+}
+
+backToTop();

@@ -1,5 +1,12 @@
 .design {
   background:linear-gradient($light 50%, $dark 50%) ;
+  
+  &__row {
+    padding: 0 13px;
+    background: transparent;
+    
+  }
+  
   &__section-title {
     margin-bottom: 2.21rem;
   }

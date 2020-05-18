@@ -4,15 +4,7 @@
   padding-top: 95px;
   height: 100vh;
   color: $light;
-    &::after{
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 50px;
-      background-color: $dark;
-    }
+
   &__instagram {
     margin-top: -36px;
     max-width: 80px;
@@ -27,8 +19,8 @@
     width: 100%;
     height: 100%;
     position: relative;
-    
     background: $dark url('../img/hero-bg.jpg') no-repeat center;
+    
     
     background-size: cover;
     &::before {
@@ -98,6 +90,7 @@
     text-decoration: none;
     color: $light;
     transition: color 0.2s;
+    margin-bottom: -47px;
     &::after {
       content: '';
       width: 30px;

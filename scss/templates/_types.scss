@@ -1,4 +1,9 @@
 .types {
+  
+  &__row {
+    padding: 0 13px;
+  
+  }
   &__section-title {
     margin-bottom: 2.21rem;
   }
@@ -14,9 +19,7 @@
   justify-content: space-between;
 }
 
-.col {
-  flex-basis: 32%;
-}
+
 
 .card {
   &__image {
@@ -27,13 +30,14 @@
     position: relative;
     max-width: 23.52rem;
     margin: -9.34rem auto 0 auto;
-    padding: 1.78rem 1.89rem;
+    padding: 1.78rem 2.4rem;
     background-color: $light;
     box-shadow: 10px 10px 20px rgba($dark,0.03);
   }
 
   &__title {
     margin: 0;
+    margin-left: -4px;
     font-family: 'Yeseva One', sans-serif;
     font-size: 1.28rem;
     color: #363636;
