@@ -30,7 +30,7 @@
   &-slide {
     display: flex;
     flex-flow: wrap;
-    margin-bottom: 6.714rem;
+    margin-bottom: 6.5rem;
   
 
     &__heading {
@@ -52,7 +52,7 @@
       margin-top: 0.714rem;
       flex-basis: 50%;
       align-items: start;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
   }
   &-pagination{
@@ -92,10 +92,10 @@
 .swiper-container-horizontal>.swiper-pagination-bullets {
   width: auto;
   bottom: 0;
-  margin: 0 7px;
+
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+  margin: 0 9px;
   margin-bottom: -2px;
 }
