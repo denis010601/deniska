@@ -28,27 +28,22 @@ sup {
     color: $light;
   }
   &-title { 
-
     text-align: center;
     text-transform: uppercase;
-    
     &--left {
-      
       text-align: left;
-      
     }
+
     &-heading {
       font-stretch: narrower;
       font-weight: normal;
       font-size: 1.42rem;
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
-
-      &--primary {
-        color: $primary;
+        &--primary {
+          color: $primary;
+        }
       }
-      }
-
     &-control__heading {
       font-stretch: narrower;
       letter-spacing: -0.07em;
@@ -79,8 +74,8 @@ sup {
       line-height: 2.0rem;
       max-width: 31.57rem;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 29px;
+      font-size: 1.285rem;
+      line-height: 2.07rem;
       text-transform: none;
     }
 

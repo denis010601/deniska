@@ -1,14 +1,18 @@
 .project {
-  margin-top: -47px;
-  padding-top: 185px;
-  padding-left: 31px;
+  margin-top: -3.36rem;
+  padding-top: 13.21rem;
+  padding-left: 2.214rem;
   padding-right: 1%;
   background: url('../img/bgline.png') no-repeat center;
   background-size: cover;
-  &-image {
-    padding-top: 25px;
-    
+  &-image__col  {
+    padding-top: 1.78rem;
+    width: 55%;
   }
+}
+
+.col-secion-project {
+  width: 43%;
 }
 
 .project--swiper-slide__text {
@@ -18,35 +22,37 @@
 }
 
 
+
+
 .swiper {
 
 
   &-slide {
     display: flex;
     flex-flow: wrap;
-    margin-bottom: 94px;
+    margin-bottom: 6.714rem;
   
 
     &__heading {
       color: $primary;
-      font-size:  18px;
+      font-size:  1.285rem;
       text-transform: uppercase;  
       line-height: 1.78rem;
       font-weight: normal;
       font-family: 'Yeseva One', cursive;
-      margin-bottom: 7px;
+      margin-bottom: 0.5rem;
     }
     &__value {
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 1.07rem;
+      line-height: 1.428rem;
     }
     &__text {
       display: flex;
       flex-direction: column;
-      margin-top: 10px;
+      margin-top: 0.714rem;
       flex-basis: 50%;
       align-items: start;
-      margin-bottom: 7px;
+      margin-bottom: 0.5rem;
     }
   }
   &-pagination{
