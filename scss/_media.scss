@@ -310,11 +310,13 @@
 
   .control {
     &__video {
-      width: auto;
-      min-height: auto;
-      background: $dark url('/img/vide-bg-min.jpg') no-repeat center;
+
+      background: $dark url('../img/vide-bg-min.jpg') no-repeat center;
     }
     
+  }
+  .video__play {
+   width: 90px ;
   }
 }
 
