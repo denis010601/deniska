@@ -1266,7 +1266,8 @@ sup {
       max-width: 28rem;
       line-height: 140%; }
   .control__video {
-    background: #131313 url("../img/vide-bg-min.jpg") no-repeat center; }
+    box-shadow: none;
+    background: url("../img/vide-bg-min.jpg") no-repeat center; }
   .video__play {
     width: 90px; } }
 
