@@ -83,6 +83,50 @@ $(document).ready(function (){
     bullets.css('left', prev.width() + 20)
 
     new WOW().init();
+
+    var target = $('.animate__animated');
+    var targetPos = target.offset().top;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    $(window).scroll(function(){
+      var winScrollTop = $(this).scrollTop();
+      if(winScrollTop > scrollToElem){
+        //сработает когда пользователь доскроллит к элементу с классом .elem
+      }
+    });
+
+    // Валидация формы
+    $(".modal__form").validate({
+      errorElement: "div",
+      errorClass: "invalid",
+      rules: {
+        // simple rule, converted to {required:true}
+        userName: {
+          required: true,
+          minlength: 2
+        },
+        userPhone: "required",
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+        messages: {
+          userName: {
+            required:"Имя обязательно",
+            minlength: "Имя не короче двух букв"
+
+          } ,
+          userPhone: "Телефон обязателен",
+          userEmail: {
+        required: "Укажите email",
+        email: "введите формате: name@domain.com"
+      }
+    }
+    
+    });
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) __-__-__"});
 });
 
 

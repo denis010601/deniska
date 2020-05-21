@@ -66,6 +66,14 @@
     align-self: flex-end;
     padding: 1.35rem 2.8rem;
   }
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    &:nth-child(3){
+      margin-bottom: 0;
+    }
+  }
 }
 
 .policy {
@@ -94,5 +102,9 @@
       cursor: pointer;
       margin-right: 0.64rem;
     }
+  }
+
+  &-center {
+    justify-content: center;
   }
 }

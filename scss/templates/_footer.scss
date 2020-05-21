@@ -1,0 +1,73 @@
+.footer{
+  padding:4rem 0;
+  &__form {
+    max-width: 63rem;
+    margin: auto;
+    padding-top: 2.3rem;
+    padding-bottom: 2.4rem;
+    background: $dark url('../img/form-footer-bg.svg');
+  }
+  &__section-title {
+    
+    margin-bottom: 3.25rem;
+    font-style: normal;
+    font-weight: normal;
+    &-heading {
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4285rem;
+      
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      color: #FFFFFF;
+    }
+  }
+  
+  &__question {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 37.257rem;
+    margin: auto;
+    justify-content: space-between;
+  }
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    &:nth-child(3) {
+      margin-top: 3rem;
+      flex-basis: 100%;
+    }
+  }
+  &__policy {
+    margin-top: 2rem;
+    flex-basis: 100%;
+    margin-bottom: 3.6rem;
+  }
+  &__label {
+    margin-bottom: 0;
+  }
+  &__input {
+      
+    margin-top: -0.1rem;
+    color: $light;
+    &::placeholder {
+      color: $light;
+    }
+  }
+  .button {
+    font-size: 1rem;
+  }
+  &__button {
+    padding: 1.2857rem 4.2857rem;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+  }
+}

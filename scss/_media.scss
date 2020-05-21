@@ -271,7 +271,48 @@
     &__button {
       order: 3;
     }
-}
+  }
+
+  .footer{
+    padding: 0;
+    background: $dark;
+    &__form {
+      width: 100%;
+      margin: 0;
+      background: transparent;
+
+    }
+    &__section-title-heading {
+      font-size: 1.6rem;
+      margin-bottom: 4.5rem;
+    }
+    &__question {
+      width: 100%;
+      flex-direction: column;
+      
+    }
+    &__question {
+      width: 100%;
+    }
+    &__input {
+      font-size: 18px;
+    }
+    &__input-group {
+      margin-bottom: 63px;
+      &:nth-child(3){
+        margin-top: 0;
+        margin-bottom: 1.6rem;
+      }
+    }
+    &__policy {
+      margin-left: -1rem;
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+  }
+
 
 }
 
@@ -319,6 +360,9 @@
   width: 90px ;
   }
 }
+
+
+
 
 
 
