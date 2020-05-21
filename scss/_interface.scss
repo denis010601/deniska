@@ -43,14 +43,11 @@
 
 .input {
   border: none;
-  border-bottom: 2px solid rgba(58, 58, 58, 0.6);
+  border-bottom:1px solid rgba(58, 58, 58, 0.6);
   background-color: transparent;
   font-size: 1.285rem;
-  color: $light;
   padding: 0.3rem 0 0.7rem;
-  &::placeholder {
-    color: $light;
-  }
+
 }
 
 .back-to-top {

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>турецкий ремонт в Ростове-на-дону</title>
 </head>
@@ -23,8 +24,8 @@
         </nav>
         <!-- /.nav -->
         <div class="contacts menu__contacts">
-          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts-button button--primary " data-toggle="modal">Заказать звонок</button>
+          <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
+          <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -35,11 +36,11 @@
     
       <section class="hero">
         <div class="instagram hero__instagram">
-          <a href="#" class="instagram__link">Instagram</a>
+          <a href="#" class="instagram__link ">Instagram</a>
         </div>
       
-        <div class="hero__content">
-            <h1 class="title hero__title">турецкий ремонт в&nbsp;<span class="hero__title--primary">Ростове-на-дону</span></h1>
+        <div class="hero__content ">
+            <h1 class="title hero__title animate__animated wow animate__fadeInRight ">турецкий ремонт в&nbsp;<span class="hero__title--primary">Ростове-на-дону</span></h1>
             <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
             <div class="hero__buttons">
               <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
@@ -48,13 +49,13 @@
           </div>
         
         </section>      
-      <a href="#section-title-heading" class="hero__scroll-down">листайте вниз</a>
+      <a href="#section-title-heading" class="hero__scroll-down wow animate__swing">листайте вниз</a>
     <!-- /.hero -->
     <section class="section section--dark project">
       <div class="container">
         <div class="row project__row">
           <div class="col col-secion-project">
-            <div class="section-title section-title--left">
+            <div class="section-title section-title--left animate__animated wow animate__bounceInDown">
               <h2 id="section-title-heading" class="section-title-control__heading section-title-control__heading--primary">Завершенные 
                 <span class="section-title__word">
                   ПРоекты
@@ -149,12 +150,11 @@
                 </div>
           </div>
           <!-- /.col col-50 -->
-          <div class="col  project-image__col">
+          <div class="col  project-image__col wow ">
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
-                 
                     <div class="swiper-slide">
                       <img src="img/project.png" alt="фото проекта">
                     </div>
@@ -175,23 +175,55 @@
       <!-- /.container -->
     </section>
     <!-- /.sectuiob--dark project -->
-    <section class="section conrtol">
+    <section class="section conrtol control__section">
       <div class="container">
-        <div class="section-title">
-          <h2 id="section-title-heading" class="section-title-heading">Онлайн Контроль</h2>
+        <div class="section-title control__section-title">
+          <h2 id="section-title-heading" class="section-title-heading control__section-title-heading">Онлайн Контроль</h2>
           <!-- /.section-title-heading -->
           <div class="section-title__image">
             <img src="img/video.svg" alt="video">
           </div>
           
-          <!-- /.section-title__image -->
+  
         </div>
         <!-- /.section-title -->
+        <div class="control__video video animate__animated animate__fadeIn">
+          <img src="img/play.svg" alt="play" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <form action="#" class="form control__form" >
+          <div class="control__input-group">
+            <label for="user-name" class="label form__label control__label ">Имя</label>
+            <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:" >
+          </div>
+          <!-- /.control__input-group -->
+          <div class="control__input-group">
+            <label for="user-phone" class="label form__label control__label ">Телефон</label>
+            <input type="text" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <!-- /.control__input-group -->
+          
+          
+          <!-- /.policy -->
+          <button class="button button--primary control__button">
+            Отправить 
+          </button> 
+          <!-- /.button button--primary control__button -->
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" class="policy__checkbox"  id="policy-checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+          </div>
+      </div>
+      <!-- /.modal_dialog -->
+        </form>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section conrtol -->
-    <section class="section types types__row">
+    <section class="section types ">
       <div class="container">
         <div class="section-title types__section-title">
           <h2 id="section-title-heading" class="section-title-heading">Виды ремонта</h2>
@@ -225,7 +257,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag">
+                <strong class="card__pricetag types__card--pricetag animate__animated animate__flipInX">
                   от 900 руб / m<sup class="car__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -257,7 +289,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag">
+                <strong class="card__pricetag types__card--pricetag animate__animated animate__flipInX">
                   от 1800 руб / m<sup class="car__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -289,7 +321,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag">
+                <strong class="card__pricetag types__card--pricetag animate__animated animate__flipInX">
                   от 4000 руб / m<sup class="card__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -336,7 +368,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag">
+                    <strong class="card__pricetag design__card--pricetag animate__animated animate__flipInX">
                       150 руб / m<sup class="car__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -368,7 +400,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag">
+                    <strong class="card__pricetag design__card--pricetag animate__animated animate__flipInX">
                       400 руб / m<sup class="car__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -410,7 +442,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag">
+                    <strong class="card__pricetag design__card--pricetag animate__animated animate__flipInX">
                       900 руб / m<sup class="card__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -425,6 +457,147 @@
       <!-- /.conteiner -->
     </section>
     <!-- /.section design -->
+    <section class="section section--dark step">
+      <div class="container">
+        <div class="step__row">
+          <div class="col step__col-40">
+            <div class="section-title section-title--left">
+              <span class="step__intro">как мы работаем</span>
+              <h2 class="step__section-title-heading section-title-heading--primary">6 шагов
+                
+                <span class="section-title__word">
+                  до цели
+                </span></h2>
+              <!-- /.section-title-heading -->
+  
+  
+                <!-- Slider main container -->
+                  <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">1/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры<br>помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            <p class="swiper-slide-description">
+                              Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                            </p>
+                              </p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">2/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                              </p>
+                          </div>
+                        </div>    
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">3/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                              </p>
+                          </div>
+                        </div>    
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">4/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                              </p>
+                          </div>
+                        </div>    
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">5/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                              </p>
+                          </div>
+                        </div>    
+                        <div class="swiper-slide">
+                          <div class="step__swiper-text">
+                            <h3 class="swiper-slide-number">6/6</h3>
+                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
+                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
+                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                              </p>
+                          </div>
+                        </div>    
+  
+                                      
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+  
+
+                  </div>
+            </div>
+          </div>
+          <div class="col step-image__col">
+            <!-- Slider main container -->
+          <div class="step__description">
+          
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-hash="slide1">Slide 1</div>
+                  <div class="swiper-slide" data-hash="slide2">Slide 2</div>
+                  <div class="swiper-slide" data-hash="slide3">Slide 3</div>
+                  <div class="swiper-slide" data-hash="slide4">Slide 4</div>
+                  <div class="swiper-slide" data-hash="slide5">Slide 5</div>
+                  <div class="swiper-slide" data-hash="slide5">Slide 6</div>
+
+              </div>
+          </div>
+
+
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                  <!-- Slides -->
+                
+                    <div class="swiper-slide">
+                      <img src="img/step-1.jpg" alt="фото проекта">
+                    </div>
+            
+                  <div class="swiper-slide">
+                    <img src="img/step-1.jpg" alt="фото проекта">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/step-1.jpg" alt="фото проекта">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/step-1.jpg" alt="фото проекта">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/step-1.jpg" alt="фото проекта">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/step-1.jpg" alt="фото проекта">
+                  </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          <!-- /.step__description -->
+
+          <!-- /.step__col-70 -->
+        </div>
+        <!-- /.row step__row -->
+      </div>
+    </section>
     <div class="modal">
       <div class="modal__dialog">
         <button class="modal__close"></button>
@@ -460,6 +633,7 @@
   <button class="back-to-top"></button>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

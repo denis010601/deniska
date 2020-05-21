@@ -1,0 +1,103 @@
+.step {
+  padding-left: 17px;
+  &__row {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__col{
+    &-40 {
+      margin-top: -64px;
+      max-width: 35%;
+    }
+  }
+
+  &__swiper-container {
+    width: 100%;
+  }
+
+
+  
+
+  &-image__col  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.78rem;
+    padding-left: 2.5rem;
+    max-width: 65%;
+  }
+  &__intro {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $light;
+    
+  }
+
+  &__section-title-heading {
+    margin: 14px 0 85px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+
+  }
+
+  .section-title__word {
+    &::after {
+      content: '';
+      width: 90px;
+      height: 1px;
+      background-color: $primary;
+      margin-left: 6.4rem;
+      
+    }
+   &__description {
+    width: 100%;
+  } 
+  }
+
+
+  
+.swiper{
+  width: 100%;
+  &-slide{
+    margin-bottom: 75px;
+    &-number {
+      margin: 0 0 20px;
+      font-family: 'Yeseva One',cursive;
+      font-style: normal;
+      font-weight: inherit;
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+    }
+    &-name {
+      margin: 0 0 8px;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 23px;
+      text-transform: uppercase;
+      
+      color: $primary;
+    }
+    &-description {
+      margin:0 0 12px;
+      max-width: 325px;
+      text-transform: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 25px;
+      
+      color: #FFFFFF;
+    }
+  }
+}
+
+}

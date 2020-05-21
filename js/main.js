@@ -38,26 +38,51 @@ $(document).ready(function (){
   });
   
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.project .swiper-container', {
     loop: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.project .swiper-pagination',
         type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.project .swiper-button-next',
+      prevEl: '.project .swiper-button-prev',
     },
   })
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var next = $('.project .swiper-button-next');
+  var prev = $('.project .swiper-button-prev');
+  var bullets = $('.project .swiper-pagination');
 
 
   next.css ('left', prev.width() + 20 + bullets.width() + 20)
-  bullets.css('left', prev.width() + 20)
+  bullets.css('left', prev.width() + 20);
 
+    //initialize swiper when document ready
+    var mySwiper = new Swiper ('.step .swiper-container', {
+    
+      
+      loop: true,
+      pagination: {
+          el: '.step .swiper-pagination',
+          type: 'bullets',
+          
+      },
+      navigation: {
+        nextEl: '.step .swiper-button-next',
+        prevEl: '.step .swiper-button-prev',
+      },
+    })
+  
+    var next = $('.step .swiper-button-next');
+    var prev = $('.step .swiper-button-prev');
+    var bullets = $('.step .swiper-pagination');
+  
+  
+    next.css ('left', prev.width() + 20 + bullets.width() + 20)
+    bullets.css('left', prev.width() + 20)
+
+    new WOW().init();
 });
 
 

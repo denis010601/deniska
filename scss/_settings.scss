@@ -22,10 +22,14 @@ sup {
 }
 
 .section {
-  padding-bottom:  60px;
+
   &--dark {
     background-color: $dark;
     color: $light;
+  }
+  &--light {
+    background-color: $light;
+    color: $dark;
   }
   &-title { 
     text-align: center;
@@ -35,6 +39,7 @@ sup {
     }
 
     &-heading {
+
       font-stretch: narrower;
       font-weight: normal;
       font-size: 1.42rem;

@@ -3,6 +3,7 @@
   padding-top: 13.21rem;
   padding-left: 2.214rem;
   padding-right: 1%;
+  padding-bottom: 23.55rem;
   background: url('../img/bgline.png') no-repeat center;
   background-size: cover;
   &-image__col  {
@@ -25,13 +26,14 @@
 
 
 .swiper {
-
-
   &-slide {
     display: flex;
     flex-flow: wrap;
     margin-bottom: 6.5rem;
-  
+    &-next, &-prev {
+      opacity: 0;
+      visibility: hidden;
+    }
 
     &__heading {
       color: $primary;
