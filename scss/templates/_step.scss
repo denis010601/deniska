@@ -1,12 +1,14 @@
 .step {
   padding-left: 17px;
+  padding-bottom: 39.5rem;
+  background: $dark url(/img/bgline.png);
   &__row {
     display: flex;
     align-items: flex-start;
   }
   &__col{
     &-40 {
-      margin-top: -64px;
+      
       max-width: 35%;
     }
   }

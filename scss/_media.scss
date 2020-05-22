@@ -36,7 +36,7 @@
     }
   }
 }
-
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:992px){
   .back-to-top {
     opacity: 0;
@@ -46,6 +46,70 @@
   html {
     font-size: 10px;
   }
+
+  .section-title-heading {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+  .section-title__image {
+    margin-bottom: 3rem;
+  }
+  .card__pricetag {
+    box-shadow: none;
+  }
+  .card__text {
+    margin-bottom: 6.2rem;
+  }
+  .section-info {
+    margin-top: -3.5rem;
+    font-size: 1.1rem;
+    max-width: 25.5rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .types {
+    &__card {
+      margin-bottom: 5.21rem;
+    }
+    
+  }
+  .design {
+    &__card {
+      margin-bottom: 4.21rem;
+    }
+
+    &__col:nth-child(3){
+      li:nth-child(n+8) {
+        display: none;
+      }
+        li:nth-child(7){
+          &::after {
+            content:'...';
+          }
+        }
+    }
+    &__card--pricetag{
+      padding: 0.85rem 3.84rem;
+      bottom: -1.7rem;
+      
+    }
+      
+  }
+  .card {
+    &__text {
+      margin-left: 0;
+      margin-top: -12.34rem ;
+      padding: 1.98rem 2.55rem;
+    }
+  }
+  
+
+
   .col-secion-project {
     width: 100%;
   }
@@ -123,6 +187,9 @@
     }
   }
 
+  .step {
+    display: none;
+  }
 
   .menu {
     &__nav {
@@ -135,6 +202,81 @@
     }
     &__scroll-down{
       display: none;
+    }
+  }
+
+  .team {
+    &__desktop {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+    padding-top: 1.8rem;
+    background-color: $dark;
+    &__section-title {
+      &-heading {
+        font-size: 1.95rem;
+        color: $light;
+        margin:  0 0 1.5rem;
+      }
+    }
+
+    
+
+    &__card {
+      margin-bottom: 7.5rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+
+      &-title {
+        background-color: $light;
+        margin-top: -6.85rem;
+        position: relative  ;
+        max-width: 19.3rem;
+        padding-top: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+    &-info {
+      font-size: 1.5rem;
+    }
+    }
+    &__title-text {
+      display: none;
+    }
+    &.col-32 {
+      flex-basis: 44%;
+    }
+    &__row {
+      
+      padding: 0;
+      
+    }
+    &__section-title-info {
+      margin-top: -1.6rem;
+      margin-bottom: 6.5rem;
+      font-size: 1.25rem;
+      max-width: 27rem;
+      line-height: 1.8rem;
+    }
+    .card {
+      &__team {
+        
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+
+
+      }
+      &__standing {
+        margin-top: 20px;
+        font-size: 1rem;
+        padding: 1.3rem 4.1rem;
+      }
     }
   }
 }
@@ -157,17 +299,7 @@
 
 
 
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .types {
-    &__card {
-      margin-bottom: 5.21rem;
-    }
-    
-  }
+  
   .design {
     &__card {
       margin-bottom: 4.21rem;
@@ -313,11 +445,12 @@
 
   }
 
+  
 
 }
 
 
-
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:576px){
   html {
     font-size: 12px;
@@ -358,6 +491,13 @@
   }
   .video__play {
   width: 90px ;
+  }
+
+  .team {
+    &__row {
+      align-items: flex-end;
+      
+    }
   }
 }
 

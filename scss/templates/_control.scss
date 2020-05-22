@@ -9,6 +9,18 @@
     }
   }
 
+  &__title-text {
+    &::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      width: 55px;
+      height: 2px;
+      background-color: $primary;
+      border-radius: 30px;
+    }
+  }
 
   &__video {
     margin: auto;
@@ -31,29 +43,7 @@
       }
     }
   
-
-    &__text {
-      max-width: 39.78rem;
-      margin: auto;
-      margin-bottom: 4.4285rem;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.4285rem;
-      line-height: 2.4585rem;
-      text-align: center;
-      color: #363636;
-      &::before {
-        content: '';
-        display: block;
-        margin: auto;
-        margin-bottom: 2rem;
-        width: 55px;
-        height: 2px;
-        background-color: $primary;
-        border-radius: 30px;
-      }
-      
-    }
+  
 
   &__form {
     display: flex;

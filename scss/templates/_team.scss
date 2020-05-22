@@ -1,0 +1,104 @@
+.team {
+  &__mobile {
+    display: none;
+  }
+  &__section-title {
+    &-heading {
+    
+      color: $light;
+      margin: -28.7rem 0  1.2142rem;
+    }
+    &-info {
+      max-width: 32rem;
+      margin: 1.5rem auto 5.9rem ;
+      color: $light;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4285rem;
+      line-height: 1.9285rem;
+      text-align: center;
+      text-transform: none;
+    }
+  }
+  &__title-text {
+    margin-top: 100rem;
+    &::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem;
+      width: 55px;
+      height: 2px;
+      background-color: $primary;
+      border-radius: 30px;
+    }
+
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-title {
+      background-color: $light;
+      margin-top: -6rem;
+      position: relative  ;
+      max-width: 16.64rem;
+      padding-top: 1.4285rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      
+    }
+    &-info {
+      margin: 0;
+      
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.2857rem;
+      line-height: 1.8571rem;
+      text-align: center;
+      
+      color: #959595;
+      text-align: center;
+    }
+  }
+  &__row {
+    justify-content: space-around;
+    padding: 0 4.6428rem;
+    margin-bottom: 4rem;
+  }
+  .card {
+    &__team {
+      margin: 0;
+      margin-bottom: 0.2rem;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.2857rem;
+      line-height: 1.7857rem;
+      text-align: center;
+      
+      text-align: center;
+    }
+    &__standing {
+      margin-top: 20px;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 0.9rem;
+      line-height: 1.4285rem;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $primary;
+      color: $light;
+      padding: 0.87rem 3.3rem;
+    }
+  }
+  &__teams-icon {
+    position: absolute;
+    top: -50px;
+    left: -55px;
+  }
+}
