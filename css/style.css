@@ -898,6 +898,9 @@ template {
   .control__button {
     padding: 1.2857rem 4.4285rem; }
   .control__policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: auto;
     margin-top: 1.2rem; }
@@ -989,7 +992,7 @@ template {
     flex-direction: column;
     margin-bottom: 50px; }
     .modal__input-group:nth-child(3) {
-      margin-bottom: 0; }
+      margin-bottom: 8px; }
 
 .policy__checkbox {
   opacity: 0;
