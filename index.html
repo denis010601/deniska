@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2e625b5a-8eaf-480f-b595-48df5746b204
+  &lang=ru_RU" type="text/javascript"></script>
   <title>турецкий ремонт в Ростове-на-дону</title>
 </head>
 <body>
@@ -213,7 +215,7 @@
           </button> 
           <!-- /.button button--primary control__button -->
           <div class="policy control__policy">
-            <input type="checkbox" name="cpolicy-checkbox" class="policy__checkbox"  id="control-policy-checkbox" checked>
+            <input type="checkbox" name="checkbox" class="policy__checkbox"  id="control-policy-checkbox" checked>
             <label for="control-policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
       </div>
@@ -688,7 +690,6 @@
   </main> 
   <footer class="footer">
     <div class="container">
-      
       <form action="#" class="form footer__form section--dark" >
         <div class="section-title footer__section-title">
           <h2 id="section-title-heading" class="section-title-heading footer__section-title-heading">Остались вопросы?</h2>
@@ -710,8 +711,8 @@
             <input type="text" name="userEmail" class="input form__input footer__input" placeholder="Я хочу спросить:">
           </div>
           <!-- /.input-group footer__input-group -->
-          <div class="polic footer__policy">
-            <input type="checkbox" name="policy-checkbox" class="policy__checkbox"  id="footer-policy-checkbox" checked>
+          <div class="policy footer__policy">
+            <input type="checkbox" name="checkbox" class="policy__checkbox"  id="footer-policy-checkbox" checked>
             <label for="footer-policy-checkbox" class="policy__label policy-center">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
@@ -720,10 +721,50 @@
           </button> 
         </div>
         <!-- /.button button--primary modal__button -->
-    </div>
-    <!-- /.modal_dialog -->
       </form>
+      
+      <div class="footer__addres">
+      <p class="footer__addres-info">
+            Ростов на дону, Торговый центр Plaza
+            Прямой телефон +7 (999) 768 32 99
+          </p>
+            <div class="footer__addres-img">
+              <img src="img/addres-img1.svg" class="footer__addres-image" alt="sms">
+              <img src="img/addres-img2.svg" class="footer__addres-image" alt="photo">
+            </div>
+          
+            
+        </div>
+        <!-- /.address -->
+    <div class="map footer__map" id="map"></div>
+
     </div>
+      <div class="footer__menu">
+        <div class="container">
+          <div class="menu ">
+            <div class="logo menu__logo"><a href="index.html">Repair Design Project</a></div>
+            <nav class="nav menu__nav">
+              <a href="#" class="nav__item">Главная</a>
+              <a href="#" class="nav__item">ПРоекты</a>
+              <a href="#" class="nav__item">Замер</a>
+              <a href="#" class="nav__item">Команда</a>
+              <a href="#" class="nav__item">Отзывы</a>
+              <a href="#" class="nav__item">Контакты</a>
+            </nav>
+            <!-- /.nav -->
+            <div class="contacts menu__contacts">
+              <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
+              <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
+            </div>
+          </div>
+          <!-- /.menu -->
+        </div>
+      </div>
+    
+    
+      </div>
+      <!-- /.modal_dialog -->
+  
   </footer>
   <div class="modal">
     <div class="modal__dialog">
@@ -749,7 +790,7 @@
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" class="policy__checkbox"  id="modal-policy-checkbox" checked>
+          <input type="checkbox" name="checkbox" class="policy__checkbox"  id="modal-policy-checkbox" checked>
           <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->

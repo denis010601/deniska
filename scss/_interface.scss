@@ -84,17 +84,33 @@
 }
 
 .input-group {
+  display: flex;
+  flex-direction: column;
   
-    .invalid {
+    position: relative;
+    div.invalid {
+      position: absolute;
       color: red;
+      bottom: -19px;
+
     }
     input{
       &.invalid {
         border-bottom: 1px solid red;
       }
     }
+}
 
-  
+.policy {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  div.invalid {
+    
+    position: absolute;
+    color: red;
+    bottom: -19px;
+  }
 }
 
 

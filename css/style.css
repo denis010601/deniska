@@ -765,94 +765,88 @@ template {
         line-height: 25px;
         color: #FFFFFF; }
 
-.team__mobile {
-  display: none; }
-
-.team__section-title-heading {
-  color: #ffffff;
-  margin: -28.7rem 0  1.2142rem; }
-
-.team__section-title-info {
-  max-width: 32rem;
-  margin: 1.5rem auto 5.9rem;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.4285rem;
-  line-height: 1.9285rem;
-  text-align: center;
-  text-transform: none; }
-
-.team__title-text {
-  margin-top: 100rem; }
-  .team__title-text::before {
-    content: '';
-    display: block;
-    margin: auto;
-    margin-bottom: 0.5rem;
-    width: 55px;
-    height: 2px;
-    background-color: #E3B873;
-    border-radius: 30px; }
-
-.team__card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .team__card-title {
-    background-color: #ffffff;
-    margin-top: -6rem;
+.team {
+  padding-bottom: 30rem; }
+  .team__mobile {
+    display: none; }
+  .team__section-title-heading {
+    color: #ffffff;
+    margin: -28.7rem 0  1.2142rem; }
+  .team__section-title-info {
+    max-width: 32rem;
+    margin: 1.5rem auto 5.9rem;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4285rem;
+    line-height: 1.9285rem;
+    text-align: center;
+    text-transform: none; }
+  .team__title-text {
+    margin-top: 100rem; }
+    .team__title-text::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .team__card {
     position: relative;
-    max-width: 16.64rem;
-    padding-top: 1.4285rem;
     display: flex;
-    flex-direction: column;
-    align-items: stretch; }
-  .team__card-info {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .team__card-title {
+      background-color: #ffffff;
+      margin-top: -6rem;
+      position: relative;
+      max-width: 16.64rem;
+      padding-top: 1.4285rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+    .team__card-info {
+      margin: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.2857rem;
+      line-height: 1.8571rem;
+      text-align: center;
+      color: #959595;
+      text-align: center; }
+  .team__row {
+    justify-content: space-around;
+    padding: 0 4.6428rem;
+    margin-bottom: 4rem; }
+  .team .card__team {
     margin: 0;
+    margin-bottom: 0.2rem;
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 1.2857rem;
-    line-height: 1.8571rem;
+    line-height: 1.7857rem;
     text-align: center;
-    color: #959595;
     text-align: center; }
-
-.team__row {
-  justify-content: space-around;
-  padding: 0 4.6428rem;
-  margin-bottom: 4rem; }
-
-.team .card__team {
-  margin: 0;
-  margin-bottom: 0.2rem;
-  font-family: 'Yeseva One', cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.2857rem;
-  line-height: 1.7857rem;
-  text-align: center;
-  text-align: center; }
-
-.team .card__standing {
-  margin-top: 20px;
-  font-family: 'Yeseva One', cursive;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 0.9rem;
-  line-height: 1.4285rem;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  color: #ffffff;
-  padding: 0.87rem 3.3rem; }
-
-.team__teams-icon {
-  position: absolute;
-  top: -50px;
-  left: -55px; }
+  .team .card__standing {
+    margin-top: 20px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    line-height: 1.4285rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #ffffff;
+    padding: 0.87rem 3.3rem; }
+  .team__teams-icon {
+    position: absolute;
+    top: -50px;
+    left: -55px; }
 
 .control {
   background-color: #ffffff; }
@@ -904,7 +898,6 @@ template {
   .control__button {
     padding: 1.2857rem 4.4285rem; }
   .control__policy {
-    flex-basis: 100%;
     text-align: center;
     margin: auto;
     margin-top: 1.2rem; }
@@ -1001,7 +994,7 @@ template {
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked +
+  .policy__checkbox:checked ~
 .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center; }
 
@@ -1022,11 +1015,22 @@ template {
   justify-content: center; }
 
 .footer {
-  padding: 4rem 0; }
+  position: relative;
+  background: url("../img/footer-bg.jpg") no-repeat center; }
+  .footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 19, 19, 0.8); }
   .footer__form {
+    position: relative;
     max-width: 63rem;
-    margin: auto;
-    padding-top: 2.3rem;
+    top: -16rem;
+    margin: 0 auto;
+    padding-top: 2.5rem;
     padding-bottom: 2.4rem;
     background: #131313 url("../img/form-footer-bg.svg"); }
   .footer__section-title {
@@ -1056,9 +1060,9 @@ template {
       margin-top: 3rem;
       flex-basis: 100%; }
   .footer__policy {
-    margin-top: 2rem;
+    margin: 2.25rem auto 3.6rem;
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    text-align: center; }
   .footer__label {
     margin-bottom: 0; }
   .footer__input {
@@ -1083,6 +1087,35 @@ template {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase; }
+  .footer__addres {
+    max-width: 520px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -13.7rem auto 0; }
+    .footer__addres-info {
+      max-width: 520px;
+      position: relative;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #E3B873; }
+    .footer__addres-img {
+      width: 70px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 3px auto 0; }
+  .footer__menu {
+    background-color: #131313;
+    position: relative; }
+  .footer__map {
+    min-height: 456px; }
 
 .button {
   border: none;
@@ -1148,11 +1181,25 @@ template {
     border-top: 3px solid #E3B873;
     border-left: 3px solid #E3B873; }
 
-.input-group .invalid {
-  color: red; }
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .input-group div.invalid {
+    position: absolute;
+    color: red;
+    bottom: -19px; }
+  .input-group input.invalid {
+    border-bottom: 1px solid red; }
 
-.input-group input.invalid {
-  border-bottom: 1px solid red; }
+.policy {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .policy div.invalid {
+    position: absolute;
+    color: red;
+    bottom: -19px; }
 
 .title-text {
   max-width: 39.78rem;

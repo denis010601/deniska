@@ -110,38 +110,11 @@ $(document).ready(function (){
         userEmail: {
           required: true,
           email: true
-        }
-      },
-        messages: {
-          userName: {
-            required:"Имя обязательно",
-            minlength: "Имя не короче двух букв"
-
-          } ,
-          userPhone: "Телефон обязателен",
-          userEmail: {
-        required: "Укажите email",
-        email: "введите формате: name@domain.com"
-      }
-    }
-    
-    });
-    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) __-__-__"});
-    $(".footer__form").validate({
-      errorElement: "div",
-      errorClass: "invalid",
-      rules: {
-        // simple rule, converted to {required:true}
-        userName: {
-          required: true,
-          minlength: 2
         },
-        userPhone: "required",
-        // compound rule
-        userEmail: {
-          required: true,
-          email: true
+        checkbox: {
+          required : true
         }
+        
       },
         messages: {
           userName: {
@@ -151,13 +124,16 @@ $(document).ready(function (){
           } ,
           userPhone: "Телефон обязателен",
           userEmail: {
-        required: "Укажите email",
-        email: "введите формате: name@domain.com"
-      }
+            required: "Укажите email",
+            email: "введите формате: name@domain.com"
+          },
+         checkbox: "Примите соглашение"
+
+
     }
-    
     });
     $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) __-__-__"});
+    
     $(".control__form").validate({
       errorElement: "div",
       errorClass: "invalid",
@@ -172,7 +148,11 @@ $(document).ready(function (){
         userEmail: {
           required: true,
           email: true
+        },
+        checkbox: {
+          required : true
         }
+        
       },
         messages: {
           userName: {
@@ -182,13 +162,67 @@ $(document).ready(function (){
           } ,
           userPhone: "Телефон обязателен",
           userEmail: {
-        required: "Укажите email",
-        email: "введите формате: name@domain.com"
-      }
+            required: "Укажите email",
+            email: "введите формате: name@domain.com"
+          },
+         checkbox: "Примите соглашение"
+
+
     }
-    
     });
-    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) __-__-__"});
+
+    $(".footer__form").validate({
+      errorElement: "div",
+      errorClass: "invalid",
+      rules: {
+        // simple rule, converted to {required:true}
+        userName: {
+          required: true,
+          minlength: 2
+        },
+        userPhone: "required",
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        },
+        checkbox: {
+          required : true
+        }
+        
+      },
+        messages: {
+          userName: {
+            required:"Имя обязательно",
+            minlength: "Имя не короче двух букв"
+
+          } ,
+          userPhone: "Телефон обязателен",
+          userEmail: {
+            required: "Укажите email",
+            email: "введите формате: name@domain.com"
+          },
+        checkbox: "Примите соглашение"
+
+
+    }
+    });
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){ 
+        // Создание карты.    
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.76, 37.64],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 7
+        });
+    }
 });
 
 
@@ -207,6 +241,7 @@ function backToTop() {
     e.preventDefault ();
     $('html').animate({scrollTop: 0}, 1000);
   });
+
 }
 
 backToTop();
