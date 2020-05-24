@@ -309,6 +309,9 @@ template {
   max-width: 1265px;
   margin: auto; }
 
+.col-29__7 {
+  flex-basis: 29.7%; }
+
 .col-32 {
   flex-basis: 32%; }
 
@@ -548,7 +551,7 @@ template {
 
 .project {
   margin-top: -3.36rem;
-  padding-top: 13.21rem;
+  padding-top: 13rem;
   padding-left: 2.214rem;
   padding-right: 1%;
   padding-bottom: 23.55rem;
@@ -766,7 +769,7 @@ template {
         color: #FFFFFF; }
 
 .team {
-  padding-bottom: 30rem; }
+  padding-bottom: 1.4rem; }
   .team__mobile {
     display: none; }
   .team__section-title-heading {
@@ -848,11 +851,79 @@ template {
     top: -50px;
     left: -55px; }
 
+.client {
+  padding-bottom: 27.25rem; }
+  .client__section-title-info {
+    max-width: 340px;
+    margin: auto;
+    margin-top: 1.34rem;
+    margin-bottom: 3.6rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: none;
+    color: #363636; }
+  .client__row {
+    padding: 0 20px; }
+  .client__card {
+    position: relative;
+    padding: 20px 0 55px 20px; }
+    .client__card-header {
+      display: flex;
+      align-items: center; }
+    .client__card-avatar {
+      border-radius: 50%; }
+    .client__card-name {
+      max-width: 197px;
+      margin: 0;
+      margin-left: 23px;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: #181818; }
+    .client__card-review {
+      max-width: 324px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 180%;
+      color: #959595; }
+    .client__card-footer {
+      position: absolute;
+      left: 0;
+      bottom: -28px;
+      display: flex;
+      justify-content: flex-start; }
+    .client__card-title {
+      background-color: #E3B873;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Yeseva One',cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #ffffff; }
+      .client__card-title-area {
+        text-transform: uppercase;
+        width: 135px;
+        padding: 11px 19px;
+        margin-right: 1px; }
+      .client__card-title-day {
+        text-transform: none;
+        width: 158px;
+        padding: 11px 23px 11px 19px; }
+
 .control {
   background-color: #ffffff; }
   .control__section-title {
     margin-bottom: 2.314rem;
-    margin-top: -23.5rem;
+    margin-top: -23.7rem;
     color: #ffffff; }
     .control__section-title-heading {
       margin-top: 0.2rem; }
@@ -1354,6 +1425,8 @@ sup {
     visibility: hidden; }
   html {
     font-size: 10px; }
+  .client {
+    display: none; }
   .section-title-heading {
     font-size: 2rem;
     letter-spacing: -1px; }

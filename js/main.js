@@ -182,7 +182,7 @@ $(document).ready(function (){
         },
         userPhone: "required",
         // compound rule
-        userEmail: {
+        userquestion: {
           required: true,
           email: true
         },
@@ -198,10 +198,7 @@ $(document).ready(function (){
 
           } ,
           userPhone: "Телефон обязателен",
-          userEmail: {
-            required: "Укажите email",
-            email: "введите формате: name@domain.com"
-          },
+          userquestion: "Задайте вопрос",
         checkbox: "Примите соглашение"
 
 

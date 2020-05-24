@@ -1,0 +1,82 @@
+.client {
+  padding-bottom: 27.25rem;
+  &__section-title-info {
+    max-width: 340px;
+    margin: auto;
+    margin-top: 1.34rem;
+    margin-bottom: 3.6rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: none;
+    
+    color: #363636; 
+  }
+  &__row {
+    padding: 0 20px;
+  }
+  &__card {
+    position: relative;
+    padding: 20px 0 55px 20px;
+    &-header {
+      display: flex;
+      align-items: center;
+    }
+    &-avatar {
+      border-radius: 50%;
+    }
+    &-name {
+      max-width: 197px;
+      margin: 0;
+      margin-left: 23px;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: $black;
+    }
+    &-review {
+      max-width: 324px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 180%;
+      color: $silver;
+    }
+    &-footer {
+      position: absolute;
+      left: 0;
+      bottom: -28px;
+      display: flex;
+      justify-content: flex-start;
+      
+    }
+    &-title {
+      background-color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Yeseva One',cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: $light;
+      &-area {
+        text-transform: uppercase;
+        width: 135px;
+        padding: 11px 19px;
+        margin-right: 1px;
+      }
+      &-day {
+        text-transform: none;
+        width: 158px;
+        padding: 11px 23px 11px 19px;
+        
+      }
+    }
+  }
+}
