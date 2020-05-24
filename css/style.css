@@ -1019,7 +1019,7 @@ template {
 
 .footer {
   padding-top: 1rem;
-  background: url("../img/footer-bg.jpg") no-repeat center;
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center;
   background-size: cover;
   position: relative; }
   .footer::before {
@@ -1032,7 +1032,7 @@ template {
     background-color: rgba(0, 0, 0, 0.8); }
   .footer__wrap {
     position: relative;
-    max-width: 883px;
+    max-width: 63.07rem;
     margin: -16.9rem auto 0;
     padding-top: 2.3rem;
     padding-bottom: 2.5rem;
@@ -1046,13 +1046,12 @@ template {
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.4285rem;
     color: #ffffff; }
   .footer__form {
     display: flex;
     justify-content: space-between;
-    max-width: 519px;
+    max-width: 37.07rem;
     margin: auto;
     flex-flow: wrap; }
   .footer__input {
@@ -1079,189 +1078,56 @@ template {
     flex-basis: 100%;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1.1428rem;
+    line-height: 1.5714rem;
     color: #ffffff; }
   .footer__button {
     margin: auto;
-    padding: 18px 62px;
+    padding: 1.2857rem 4.4285rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.07rem;
     text-transform: uppercase;
     color: #ffffff; }
   .footer__addres {
-    max-width: 520px;
+    position: relative;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto; }
     .footer__addres-info {
-      max-width: 520px;
+      max-width: 37.14rem;
       position: relative;
       font-family: 'Yeseva One', cursive;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 1.428rem;
+      line-height: 2rem;
       text-align: center;
       text-transform: uppercase;
       color: #E3B873; }
     .footer__addres-img {
-      width: 70px;
+      width: 5rem;
       position: relative;
       display: flex;
       justify-content: space-between;
-      margin: 3px auto 0; }
+      margin: 0.2142rem auto 0; }
+  .footer__addres-map {
+    margin: auto;
+    max-width: 66rem; }
   .footer__map {
-    max-height: 500px;
-    max-width: 925px;
+    position: relative;
+    max-height: 35.7rem;
     margin: 2.9rem auto 4.8rem;
-    height: 456px; }
+    min-height: 32.57rem; }
+  .footer__map {
+    margin: 0; }
   .footer__menu {
     position: relative;
-    padding: 24px 0;
+    padding: 1.7142rem 0;
     background-color: #131313; }
 
-/*
-
-.footer{
-  position: relative;
-  background: url('../img/footer-bg.jpg') no-repeat center;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    
-    background-size: cover ;
-  }
-  
-  &__form {
-    position: relative;
-    
-    max-width: 63rem;
-    top: -1rem;
-    
-    padding-top: 2.5rem;
-    padding-bottom: 2.4rem;
-  
-    background: $dark url('../img/form-footer-bg.svg');
-  }
-  &__section-title {
-    
-    margin-bottom: 3.25rem;
-    font-style: normal;
-    font-weight: normal;
-    &-heading {
-      font-family: 'Yeseva One', cursive;
-      font-style: normal;
-      font-weight: normal;
-      
-      text-align: center;
-      text-transform: uppercase;
-      margin: 0;
-      color: #FFFFFF;
-    }
-  }
-  
-  &__question {
-    display: flex;
-    
-    flex-flow: wrap;
-    max-width: 37.257rem;
-    margin: auto;
-    justify-content: space-between;
-  }
-  &__input-group {
-    display: flex;
-    flex-direction: column;
-    
-    flex-basis: 45%;
-    &:nth-child(3) {
-      margin-top: 3rem;
-      flex-basis: 100%;
-    }
-  }
-  &__policy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2.25rem auto 3.6rem;
-    flex-basis: 100%;
-    text-align: center;
-  }
-  &__label {
-    
-    margin-bottom: 0;
-  }
-  &__input {
-      
-    margin-top: -0.1rem;
-    color: $light;
-    &::placeholder {
-      color: $light;
-    }
-  }
-  .button {
-    font-size: 1rem;
-    margin: auto;
-    padding: 1.2857rem 4.2857rem;
-    max-width: 100%;
-  }
-  &__button {
-    
-    margin: 0 auto;
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    
-    
-  }
-
-  &__addres {
-    max-width: 520px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:auto ;
-    &-info {
-    max-width: 520px;
-    position: relative;
-    
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;  
-    color: $primary;  
-    }
-    &-img {
-      width: 70px;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      margin: 3px auto 0;
-      
-    }
-  }
-  &__menu {
-    background-color: $dark;
-    position: relative;
-  }
-  &__map {
-    min-height: 456px;
-    max-width: 925px;
-    margin: 2.9rem auto;
-  }
-}*/
 .button {
   border: none;
   border-radius: 2px;
@@ -1356,6 +1222,9 @@ template {
   line-height: 2.4585rem;
   text-align: center;
   color: #363636; }
+
+.ymaps-2-1-76-map {
+  flex-basis: 66rem; }
 
 @font-face {
   font-family: 'Futura Book';
@@ -1576,6 +1445,7 @@ sup {
   .hero__scroll-down {
     display: none; }
   .team {
+    background: #131313;
     padding-top: 1.8rem;
     background-color: #131313; }
     .team__desktop {
@@ -1622,16 +1492,40 @@ sup {
     .team .card__standing {
       margin-top: 20px;
       font-size: 1rem;
-      padding: 1.3rem 4.1rem; } }
+      padding: 1.3rem 4.1rem; }
+  .footer {
+    background: #131313; }
+    .footer__wrap {
+      background: black; }
+    .footer__form {
+      margin: auto;
+      max-width: 500px; }
+    .footer__title {
+      font-size: 1.7rem;
+      margin-bottom: 4.5rem; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__policy {
+      margin-bottom: 4.7rem; }
+    .footer__button {
+      margin: 0;
+      flex-basis: 100%;
+      font-size: 1.2rem; }
+    .footer__addres-map {
+      display: flex;
+      flex-direction: column;
+      max-width: 340px; }
+    .footer__addres {
+      order: 2; }
+    .footer__menu {
+      display: none; } }
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px; }
-  .section {
-    padding: 1rem; }
-    .section-title {
-      font-size: 1.2rem;
-      margin-bottom: 0.2rem; }
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem; }
   .design__card {
     margin-bottom: 4.21rem; }
   .design__col:nth-child(3) li:nth-child(n+8) {
@@ -1686,34 +1580,7 @@ sup {
     font-size: 1.2rem;
     padding: 18px 66px; }
   .control__button {
-    order: 3; }
-  .footer {
-    padding: 0;
-    background: #131313; }
-    .footer__form {
-      width: 100%;
-      margin: 0;
-      background: transparent; }
-    .footer__section-title-heading {
-      font-size: 1.6rem;
-      margin-bottom: 4.5rem; }
-    .footer__question {
-      width: 100%;
-      flex-direction: column; }
-    .footer__question {
-      width: 100%; }
-    .footer__input {
-      font-size: 18px; }
-    .footer__input-group {
-      margin-bottom: 63px; }
-      .footer__input-group:nth-child(3) {
-        margin-top: 0;
-        margin-bottom: 1.6rem; }
-    .footer__policy {
-      margin-left: -1rem;
-      margin-top: 0;
-      display: flex;
-      justify-content: flex-start; } }
+    order: 3; } }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 576px) {

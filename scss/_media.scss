@@ -206,6 +206,7 @@
   }
 
   .team {
+    background: $dark;
     &__desktop {
       display: none;
     }
@@ -279,6 +280,47 @@
       }
     }
   }
+  .footer {
+    
+    background: $dark;
+    &__wrap {
+      background: black ;
+      
+    }
+    &__form {
+      margin: auto;
+      max-width: 500px;
+    }
+    &__title {
+      font-size: 1.7rem;
+      margin-bottom: 4.5rem;
+    }
+    &__input-group {
+      flex-basis: 100%;
+    }
+    &__policy {
+      margin-bottom: 4.7rem;
+    }
+    &__button  {
+      margin: 0;
+      flex-basis: 100%;
+      font-size: 1.2rem;
+    }
+
+    &__addres-map {
+      display: flex;
+      flex-direction: column;
+      max-width: 340px;
+    }
+    &__addres {
+      order: 2;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+  
 }
 
 @media screen and (max-width:768px){
@@ -289,7 +331,7 @@
 
 
   .section {
-    padding: 1rem;
+    
     &-title { 
       font-size: 1.2rem;
       margin-bottom: 0.2rem;
@@ -405,45 +447,7 @@
     }
   }
 
-  .footer{
-    padding: 0;
-    background: $dark;
-    &__form {
-      width: 100%;
-      margin: 0;
-      background: transparent;
-
-    }
-    &__section-title-heading {
-      font-size: 1.6rem;
-      margin-bottom: 4.5rem;
-    }
-    &__question {
-      width: 100%;
-      flex-direction: column;
-      
-    }
-    &__question {
-      width: 100%;
-    }
-    &__input {
-      font-size: 18px;
-    }
-    &__input-group {
-      margin-bottom: 63px;
-      &:nth-child(3){
-        margin-top: 0;
-        margin-bottom: 1.6rem;
-      }
-    }
-    &__policy {
-      margin-left: -1rem;
-      margin-top: 0;
-      display: flex;
-      justify-content: flex-start;
-    }
-
-  }
+ 
 
   
 
