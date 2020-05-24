@@ -618,7 +618,7 @@
           <div class="col col-32">
             <div class="card team__card">
               <div class="card__image">
-                <img src="/img/teams-icon1.svg" class="team__teams-icon" alt="иконка должности">
+                <img src="img/teams-icon1.svg" class="team__teams-icon" alt="иконка должности">
                 <img src="img/team1.jpg"  class="team__desktop" alt=">Алексей Колмаков" >
                 <img src="img/team1-min.jpg" class="team__mobile"  alt="Алексей Колмаков">
               </div>
@@ -640,7 +640,7 @@
           <div class="col col-32">
             <div class="card team__card">
               <div class="card__image">
-                <img src="/img/teams-icon2.svg" class="team__teams-icon" alt="иконка должности">
+                <img src="img/teams-icon2.svg" class="team__teams-icon" alt="иконка должности">
                 <img src="img/team2.jpg" class="team__desktop" alt=">Алиса Сухорукова" >
                 <img src="img/team2-min.jpg" class="team__mobile"  alt="Алиса Сухорукова">
               </div>
@@ -660,7 +660,7 @@
           <div class="col col-32">
             <div class="card team__card">
               <div class="card__image">
-                <img src="/img/teams-icon3.svg" class="team__teams-icon" alt="иконка должности">
+                <img src="img/teams-icon3.svg" class="team__teams-icon" alt="иконка должности">
                 <img src="img/team3.jpg" class="team__desktop" alt=">Давид Волынев" >
                 <img src="img/team3-min.jpg" class="team__mobile"  alt="Давид Волынев">
               </div>
@@ -688,27 +688,26 @@
     </section>
     <!-- /.secmion comands -->
   </main> 
-  <footer class="footer">
+  <footer class="footer section">
     <div class="container">
-      <form action="#" class="form footer__form section--dark" >
-        <div class="section-title footer__section-title">
-          <h2 id="section-title-heading" class="section-title-heading footer__section-title-heading">Остались вопросы?</h2>
-          <!-- /.section-title-heading --> 
-        </div>
-        <div class="question footer__question">
+      <div class="footer__wrap">
+        <h2 class="footer__title">
+          Остались вопросы?
+        </h2>
+        <form action="#" class="form footer__form" >
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light footer__label">Имя</label>
+            <label for="user-name" class="label form__label label--light">Имя</label>
             <input type="text" name="userName" class="input form__input footer__input" id="user-name" placeholder="Как вас зовут:" >
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light footer__label">Телефон</label>
+            <label for="user-phone" class="label form__label label--light">Телефон</label>
             <input type="tel" name="userPhone" class="input form__input footer__input" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light footer__label" id="user-phone">Вопрос</label>
-            <input type="text" name="userEmail" class="input form__input footer__input" placeholder="Я хочу спросить:">
+            <label for="user-question" class="label form__label label--light" id="user-phone">Вопрос</label>
+            <input type="text" name="userquestion" class="input form__input footer__input" placeholder="Я хочу спросить">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="policy footer__policy">
@@ -719,52 +718,46 @@
           <button class="button button--primary footer__button">
             Отправить
           </button> 
-        </div>
-        <!-- /.button button--primary modal__button -->
-      </form>
-      
-      <div class="footer__addres">
-      <p class="footer__addres-info">
-            Ростов на дону, Торговый центр Plaza
-            Прямой телефон +7 (999) 768 32 99
-          </p>
-            <div class="footer__addres-img">
-              <img src="img/addres-img1.svg" class="footer__addres-image" alt="sms">
-              <img src="img/addres-img2.svg" class="footer__addres-image" alt="photo">
-            </div>
-          
-            
-        </div>
-        <!-- /.address -->
-    <div class="map footer__map" id="map"></div>
-
-    </div>
-      <div class="footer__menu">
-        <div class="container">
-          <div class="menu ">
-            <div class="logo menu__logo"><a href="index.html">Repair Design Project</a></div>
-            <nav class="nav menu__nav">
-              <a href="#" class="nav__item">Главная</a>
-              <a href="#" class="nav__item">ПРоекты</a>
-              <a href="#" class="nav__item">Замер</a>
-              <a href="#" class="nav__item">Команда</a>
-              <a href="#" class="nav__item">Отзывы</a>
-              <a href="#" class="nav__item">Контакты</a>
-            </nav>
-            <!-- /.nav -->
-            <div class="contacts menu__contacts">
-              <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
-              <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
-            </div>
-          </div>
-          <!-- /.menu -->
-        </div>
-      </div>
-    
-    
-      </div>
-      <!-- /.modal_dialog -->
+          <!-- /.button button--primary footer__button -->
   
+        </form>
+        <!-- /.form footer__form -->
+      </div>
+      <div class="footer__addres">
+        <p class="footer__addres-info">
+              Ростов на дону, Торговый центр Plaza
+              Прямой телефон +7 (999) 768 32 99
+            </p>
+              <div class="footer__addres-img">
+                <img src="img/addres-img1.svg" class="footer__addres-image" alt="sms">
+                <img src="img/addres-img2.svg" class="footer__addres-image" alt="photo">
+              </div>
+            
+              
+          </div>
+      <div class="map footer__map" id="map"></div>
+    </div>
+    <div class="footer__menu">
+      <div class="container">
+        <div class="menu">
+          <div class="logo menu__logo"><a href="index.html">Repair Design Project</a></div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item">Главная</a>
+            <a href="#" class="nav__item">ПРоекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <!-- /.nav -->
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
+            <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
+          </div>
+        </div>
+        <!-- /.menu -->
+      </div>
+    </div>
   </footer>
   <div class="modal">
     <div class="modal__dialog">
@@ -798,7 +791,7 @@
           Отправить заявку
         </button> 
         <!-- /.button button--primary modal__button -->
-   
+
       </form>
       <!-- /.form modal__form -->
       <!-- /.modal__title -->
