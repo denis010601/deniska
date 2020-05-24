@@ -221,8 +221,8 @@ $(document).ready(function (){
           ),
   
           myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-              hintContent: 'Собственный значок метки',
-              balloonContent: 'Это красивая метка'
+              hintContent: 'Наш офис',
+              balloonContent: 'Цокальный этаж'
           }, {
               // Опции.
               // Необходимо указать данный тип макета.
