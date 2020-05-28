@@ -158,6 +158,7 @@
     &__section {
       background: $dark;
       color: $light;
+      margin-bottom: 4rem;
     }
     &__section-title {
       margin-bottom: 2.314rem;
@@ -184,16 +185,50 @@
       color: $light;
   
       &::placeholder {
-        position: absolute;
+        
         color: $light;
         
       }
     }
+    
+    
+    
+      &__video {
+        min-height: 33rem;
+      }
+      &__form {
+  
+        flex-direction: column;
+        align-items: stretch;
+        
+      }
+      &__input-group {
+        height: 51px;
+        width: 100%;
+        
+        
+        &:nth-child(1){
+          margin-bottom: 56px;
+        }
+      }
+      &__policy {
+  
+        margin-top: 0.5rem;
+        margin-bottom: 5.3rem;
+      }
+      &__button {
+        margin-bottom: -20px;
+        font-size: 1.2rem;
+        padding: 18px 66px;
+      }
+  
+  
+      &__button {
+        order: 3;
+      }
+    
   }
 
-  .step {
-    display: none;
-  }
 
   .menu {
     &__nav {
@@ -410,50 +445,6 @@
       }
     }
   }
-
-  .control {
-    
-    &__section-title {  
-      margin-bottom: 4rem;
-    }
-    &__video {
-      min-height: 33rem;
-    }
-    &__form {
-
-      flex-direction: column;
-      align-items: stretch;
-      
-    }
-    &__input-group {
-      height: 51px;
-      width: 100%;
-      
-      
-      &:nth-child(1){
-        margin-bottom: 56px;
-      }
-    }
-    &__policy {
-
-      margin-top: 0.5rem;
-      margin-bottom: 5.3rem;
-    }
-    &__button {
-      margin-bottom: -20px;
-      font-size: 1.2rem;
-      padding: 18px 66px;
-    }
-
-
-    &__button {
-      order: 3;
-    }
-  }
-
- 
-
-  
 
 }
 

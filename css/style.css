@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -769,7 +770,9 @@ template {
         color: #FFFFFF; }
 
 .team {
-  padding-bottom: 1.4rem; }
+  padding-bottom: 1.4rem;
+  padding-top: 33rem;
+  background: linear-gradient(#131313 50%, #ffffff 50%); }
   .team__mobile {
     display: none; }
   .team__section-title-heading {
@@ -1088,11 +1091,39 @@ template {
 .policy-center {
   justify-content: center; }
 
+.thank {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3.5714rem; }
+  .thank--visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 200; }
+  .thank__text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    max-width: 80rem;
+    background-color: #E3B873;
+    border: 1px solid #131313;
+    padding: 2.1428rem 3.5714rem; }
+
 .footer {
   padding-top: 1rem;
   background: #131313 url("../img/footer-bg.jpg") no-repeat center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  /* Блок, в котором появится Яндекс.Карта */
+  /* Индикатор загрузки, который показывается до загрузки карты */ }
   .footer::before {
     content: '';
     position: absolute;
@@ -1105,13 +1136,13 @@ template {
     position: relative;
     max-width: 63.07rem;
     margin: -16.9rem auto 0;
-    padding-top: 2.3rem;
+    padding-top: 2.6rem;
     padding-bottom: 2.5rem;
     margin-bottom: 2.1rem;
     background: #131313 url("../img/form-footer-bg.svg"); }
   .footer__title {
     margin: 0;
-    margin-bottom: 3.1rem;
+    margin-bottom: 3.3rem;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
@@ -1183,7 +1214,7 @@ template {
       position: relative;
       display: flex;
       justify-content: space-between;
-      margin: 0.2142rem auto 3rem; }
+      margin: 0.2142rem auto 0rem; }
   .footer__addres-map {
     margin: auto;
     max-width: 66rem; }
@@ -1199,6 +1230,81 @@ template {
     position: relative;
     padding: 1.7142rem 0;
     background-color: #131313; }
+  .footer .ymap-container {
+    position: relative;
+    max-height: 35.7rem;
+    margin: 0;
+    min-height: 33.3rem;
+    position: relative;
+    margin: 3em 0 2em 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: url("../img/map-bg.jpg") #ffffff no-repeat center;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2); }
+  .footer #map-yandex {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 33.3em;
+    cursor: pointer;
+    background-color: transparent; }
+  .footer .loader {
+    position: absolute;
+    z-index: 15;
+    top: -100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000000;
+    transition: opacity .7s ease;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.55); }
+  .footer .loader:after,
+  .footer .loader:before {
+    box-sizing: border-box; }
+  .footer .loader.is-active {
+    top: 0;
+    opacity: 1; }
+  .footer .loader-default:after {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    content: '';
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    border: solid 8px #ffffff;
+    border-left-color: transparent;
+    border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 .button {
   border: none;
@@ -1292,8 +1398,7 @@ template {
   font-weight: normal;
   font-size: 1.4285rem;
   line-height: 2.4585rem;
-  text-align: center;
-  color: #363636; }
+  text-align: center; }
 
 .ymaps-2-1-76-map {
   flex-basis: 66rem; }
@@ -1477,7 +1582,8 @@ sup {
     align-items: center; }
   .control__section {
     background: #131313;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 4rem; }
   .control__section-title {
     margin-bottom: 2.314rem;
     margin-top: -14rem;
@@ -1496,22 +1602,34 @@ sup {
     width: 100%;
     color: #ffffff; }
     .control__input::-webkit-input-placeholder {
-      position: absolute;
       color: #ffffff; }
     .control__input::-moz-placeholder {
-      position: absolute;
       color: #ffffff; }
     .control__input:-ms-input-placeholder {
-      position: absolute;
       color: #ffffff; }
     .control__input::-ms-input-placeholder {
-      position: absolute;
       color: #ffffff; }
     .control__input::placeholder {
-      position: absolute;
       color: #ffffff; }
-  .step {
-    display: none; }
+  .control__video {
+    min-height: 33rem; }
+  .control__form {
+    flex-direction: column;
+    align-items: stretch; }
+  .control__input-group {
+    height: 51px;
+    width: 100%; }
+    .control__input-group:nth-child(1) {
+      margin-bottom: 56px; }
+  .control__policy {
+    margin-top: 0.5rem;
+    margin-bottom: 5.3rem; }
+  .control__button {
+    margin-bottom: -20px;
+    font-size: 1.2rem;
+    padding: 18px 66px; }
+  .control__button {
+    order: 3; }
   .menu__nav {
     display: none; }
   .hero__instagram {
@@ -1633,28 +1751,7 @@ sup {
         margin-right: 0;
         margin-bottom: 26px; }
       .hero__buttons .button--outline {
-        box-shadow: none; }
-  .control__section-title {
-    margin-bottom: 4rem; }
-  .control__video {
-    min-height: 33rem; }
-  .control__form {
-    flex-direction: column;
-    align-items: stretch; }
-  .control__input-group {
-    height: 51px;
-    width: 100%; }
-    .control__input-group:nth-child(1) {
-      margin-bottom: 56px; }
-  .control__policy {
-    margin-top: 0.5rem;
-    margin-bottom: 5.3rem; }
-  .control__button {
-    margin-bottom: -20px;
-    font-size: 1.2rem;
-    padding: 18px 66px; }
-  .control__button {
-    order: 3; } }
+        box-shadow: none; } }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 576px) {

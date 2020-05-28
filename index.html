@@ -189,22 +189,23 @@
   
         </div>
         <!-- /.section-title -->
-        <div class="control__video video animate__animated animate__fadeIn">
+        <div class="control__video video animate__animated animate__fadeIn" id="player">
+          <script src = "https://www.youtube.com/iframe_api"></script>
           <img src="img/play.svg" alt="play" class="video__play">
         </div>
         <!-- /.control__video video -->
         <p class="title-text control__title-text">
           На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form" >
+        <form action="send.php" class="form control__form" >
           <div class="input-group control__input-group">
-            <label for="user-name" class="label form__label control__label ">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:" >
+            <label for="control-user-name" class="label form__label control__label ">Имя</label>
+            <input type="text" name="userName" class="input form__input control__input" id="control-user-name" placeholder="Как вас зовут:" >
           </div>
           <!-- /.control__input-group -->
           <div class="input-group control__input-group">
-            <label for="user-phone" class="label form__label control__label ">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="control-user-phone" class="label form__label control__label ">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input control__input" id="control-user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.control__input-group -->
           
@@ -459,147 +460,8 @@
       <!-- /.conteiner -->
     </section>
     <!-- /.section design -->
-    <section class="section section--dark step">
-      <div class="container">
-        <div class="step__row">
-          <div class="col step__col-40">
-            <div class="section-title section-title--left">
-              <span class="step__intro">как мы работаем</span>
-              <h2 class="step__section-title-heading section-title-heading--primary">6 шагов
-                
-                <span class="section-title__word">
-                  до цели
-                </span></h2>
-              <!-- /.section-title-heading -->
-  
-  
-                <!-- Slider main container -->
-                  <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">1/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры<br>помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            <p class="swiper-slide-description">
-                              Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                            </p>
-                              </p>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">2/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                              </p>
-                          </div>
-                        </div>    
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">3/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                              </p>
-                          </div>
-                        </div>    
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">4/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                              </p>
-                          </div>
-                        </div>    
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">5/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                              </p>
-                          </div>
-                        </div>    
-                        <div class="swiper-slide">
-                          <div class="step__swiper-text">
-                            <h3 class="swiper-slide-number">6/6</h3>
-                            <h4 class="swiper-slide-name">Выезд на замеры помещения</h4>
-                            <p class="swiper-slide-description">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете  задать абсолютно любые вопросы, касаемо ремонта. 
-                            Оценщик приходит, чтобы измерить комнату.  Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
-                              </p>
-                          </div>
-                        </div>    
-  
-                                      
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-  
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-  
-
-                  </div>
-            </div>
-          </div>
-          <div class="col step-image__col">
-            <!-- Slider main container -->
-          <div class="step__description">
-          
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide" data-hash="slide1">Slide 1</div>
-                  <div class="swiper-slide" data-hash="slide2">Slide 2</div>
-                  <div class="swiper-slide" data-hash="slide3">Slide 3</div>
-                  <div class="swiper-slide" data-hash="slide4">Slide 4</div>
-                  <div class="swiper-slide" data-hash="slide5">Slide 5</div>
-                  <div class="swiper-slide" data-hash="slide5">Slide 6</div>
-
-              </div>
-          </div>
 
 
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper swiper-no-swiping">
-                  <!-- Slides -->
-                
-                    <div class="swiper-slide">
-                      <img src="img/step-1.jpg" alt="фото проекта">
-                    </div>
-            
-                  <div class="swiper-slide">
-                    <img src="img/step-1.jpg" alt="фото проекта">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/step-1.jpg" alt="фото проекта">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/step-1.jpg" alt="фото проекта">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/step-1.jpg" alt="фото проекта">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/step-1.jpg" alt="фото проекта">
-                  </div>
-              </div>
-          </div>
-          </div>
-          </div>
-          <!-- /.step__description -->
-
-          <!-- /.step__col-70 -->
-        </div>
-        <!-- /.row step__row -->
-      </div>
-    </section>
     <section class="section team">
       <div class="container">
         <div class="section-title ">
@@ -834,7 +696,10 @@
               
                 
             </div>
-            <div class="map footer__map" id="map"></div>
+            <div class="ymap-container">
+              <div class="loader loader-default"></div>
+              <div id="map-yandex"></div>
+          </div><!-- .ymap-container -->
       </div>
     </div>
     <div class="footer__menu">
@@ -859,6 +724,11 @@
       </div>
     </div>
   </footer>
+  <div class="thank">
+    <p class="thank__text">
+      ЗАЯВКА ОТПРАВЛЕНА,<br> МЫ вам перезвоним через 15 минут
+    </p>
+  </div>
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
@@ -866,20 +736,20 @@
       <h2 class="modal__title">
         Оставьте заявку и наш менеджер свяжется с вами 
       </h2>
-      <form action="#" class="form modal__form" >
+      <form action="send.php" class="form modal__form" >
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:" >
+          <label for="modal-user-name" class="label form__label label--light">Имя</label>
+          <input type="text" name="userName" class="input form__input modal__input" id="modal-user-name" placeholder="Как вас зовут:" >
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+          <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light" id="user-phone">Email</label>
-          <input type="text" name="userEmail" class="input form__input modal__input" placeholder="Ваш email">
+          <label for="modal-user-email" class="label form__label label--light" >Email</label>
+          <input type="text" name="userEmail" class="input form__input modal__input" placeholder="Ваш email" id="modal-user-email">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy">

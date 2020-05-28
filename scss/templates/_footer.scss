@@ -17,14 +17,14 @@
     position: relative;
     max-width: 63.07rem;
     margin: -16.9rem auto 0;
-    padding-top: 2.3rem;
+    padding-top: 2.6rem;
     padding-bottom: 2.5rem;
     margin-bottom: 2.1rem;
     background: $dark url('../img/form-footer-bg.svg');
   }
   &__title {
     margin: 0;
-    margin-bottom: 3.1rem;
+    margin-bottom: 3.3rem;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
@@ -101,7 +101,7 @@
       position: relative;
       display: flex;
       justify-content: space-between;
-      margin: 0.2142rem auto 3rem;
+      margin: 0.2142rem auto 0rem;
       
     }
   }
@@ -125,5 +125,86 @@
     padding: 1.7142rem 0;
     background-color: $dark;
   }
+  .ymap-container {
+    position: relative;
+    max-height: 35.7rem;
+    
+    margin: 0;
+    min-height: 33.3rem;
+    position: relative;
+    margin: 3em 0 2em 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: url('../img/map-bg.jpg') #ffffff no-repeat center;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+  }
+  
+  /* Блок, в котором появится Яндекс.Карта */
+  #map-yandex {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 33.3em;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  /* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+ 
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+ 
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+ 
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+ 
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+ 
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
   
 }

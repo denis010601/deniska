@@ -1,0 +1,28 @@
+.thank {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3.5714rem;
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 200;
+  }
+  &__text {
+    color: $light;
+    text-transform: uppercase;
+    font-size: 2rem;
+    max-width: 80rem;
+    background-color: $primary;
+    border: 1px solid $dark;
+    padding: 2.1428rem 3.5714rem;
+  }
+}

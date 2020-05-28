@@ -1,5 +1,7 @@
 .team {
   padding-bottom: 1.4rem;
+  padding-top: 33rem;
+  background:linear-gradient($dark 50%, $light 50% ) ;
   &__mobile {
     display: none;
   }
