@@ -42,18 +42,8 @@ $(document).ready(function (){
 
     
 
-    new WOW().init();
 
-    var target = $('.animate__animated');
-    var targetPos = target.offset().top;
-    var winHeight = $(window).height();
-    var scrollToElem = targetPos - winHeight;
-    $(window).scroll(function(){
-      var winScrollTop = $(this).scrollTop();
-      if(winScrollTop > scrollToElem){
-        //сработает когда пользователь доскроллит к элементу с классом .elem
-      }
-    });
+  
 
     // Валидация формы
     $(".modal__form").validate({

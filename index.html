@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=2e625b5a-8eaf-480f-b595-48df5746b204
   &lang=ru_RU" type="text/javascript"></script>
@@ -27,7 +26,7 @@
         <!-- /.nav -->
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
-          <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
+          <button class="button contacts-button button--primary" data-toggle="modal" >Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -42,7 +41,7 @@
         </div>
       
         <div class="hero__content ">
-            <h1 class="title hero__title animate__animated wow animate__fadeInRight ">турецкий ремонт в&nbsp;<span class="hero__title--primary">Ростове-на-дону</span></h1>
+            <h1 class="title hero__title ">турецкий ремонт в&nbsp;<span class="hero__title--primary">Ростове-на-дону</span></h1>
             <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
             <div class="hero__buttons">
               <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
@@ -51,13 +50,13 @@
           </div>
         
     </section>      
-      <a href="#section-title-heading" class="hero__scroll-down wow animate__swing">листайте вниз</a>
+      <a href="#section-title-heading" class="hero__scroll-down ">листайте вниз</a>
     <!-- /.hero -->
     <section class="section section--dark project">
       <div class="container">
         <div class="row project__row">
           <div class="col col-secion-project">
-            <div class="section-title section-title--left animate__animated wow animate__bounceInDown">
+            <div class="section-title section-title--left animate__animated  ">
               <h2 id="section-title-heading" class="section-title-control__heading section-title-control__heading--primary">Завершенные 
                 <span class="section-title__word">
                   ПРоекты
@@ -152,20 +151,20 @@
                 </div>
           </div>
           <!-- /.col col-50 -->
-          <div class="col  project-image__col wow ">
+          <div class="col  project-image__col  ">
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
                     <div class="swiper-slide">
-                      <img src="img/project.png" alt="фото проекта">
+                      <img src="img/project.jpg" alt="фото проекта">
                     </div>
             
                   <div class="swiper-slide">
-                    <img src="img/project.png" alt="фото проекта">
+                    <img src="img/project.jpg" alt="фото проекта">
                   </div>
                   <div class="swiper-slide">
-                    <img src="img/project.png" alt="фото проекта">
+                    <img src="img/project.jpg" alt="фото проекта">
                   </div>
               </div>
           </div>
@@ -189,23 +188,22 @@
   
         </div>
         <!-- /.section-title -->
-        <div class="control__video video animate__animated animate__fadeIn" id="player">
-          <script src = "https://www.youtube.com/iframe_api"></script>
+        <div class="control__video video animate__animated ">
           <img src="img/play.svg" alt="play" class="video__play">
         </div>
         <!-- /.control__video video -->
         <p class="title-text control__title-text">
           На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="send.php" class="form control__form" >
+        <form action="#" class="form control__form" >
           <div class="input-group control__input-group">
-            <label for="control-user-name" class="label form__label control__label ">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="control-user-name" placeholder="Как вас зовут:" >
+            <label for="user-name" class="label form__label control__label ">Имя</label>
+            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:" >
           </div>
           <!-- /.control__input-group -->
           <div class="input-group control__input-group">
-            <label for="control-user-phone" class="label form__label control__label ">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input control__input" id="control-user-phone" placeholder="Ваш номер телефона:">
+            <label for="user-phone" class="label form__label control__label ">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.control__input-group -->
           
@@ -260,7 +258,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag animate__animated animate__zoomIn">
+                <strong class="card__pricetag types__card--pricetag animate__animated ">
                   от 900 руб / m<sup class="car__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -292,7 +290,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag animate__animated animate__zoomIn">
+                <strong class="card__pricetag types__card--pricetag ">
                   от 1800 руб / m<sup class="car__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -324,7 +322,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__pricetag types__card--pricetag animate__animated animate__zoomIn">
+                <strong class="card__pricetag types__card--pricetag ">
                   от 4000 руб / m<sup class="card__sup">2</sup>
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -371,7 +369,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag animate__animated animate__zoomIn">
+                    <strong class="card__pricetag design__card--pricetag ">
                       150 руб / m<sup class="car__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -403,7 +401,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag animate__animated animate__zoomIn">
+                    <strong class="card__pricetag design__card--pricetag ">
                       400 руб / m<sup class="car__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -445,7 +443,7 @@
                       <!-- /.card__item -->
                     </ul>
                     <!-- /.card__list -->
-                    <strong class="card__pricetag design__card--pricetag animate__animated animate__zoomIn">
+                    <strong class="card__pricetag design__card--pricetag ">
                       900 руб / m<sup class="card__sup">2</sup>
                     </strong> <!-- /.card__pricetag -->
                   </div>
@@ -460,7 +458,6 @@
       <!-- /.conteiner -->
     </section>
     <!-- /.section design -->
-
 
     <section class="section team">
       <div class="container">
@@ -490,7 +487,7 @@
                 <h3 class="card__team ">Алексей Колмаков</h3>
                 <h4 class="team__card-info">Проектный менеджер</h4>
 
-                <strong class="card__standing types__card--standing animate__animated animate__zoomIn">
+                <strong class="card__standing types__card--standing ">
                   ОПыт работы 8 лет
                 </strong> <!-- /.card__pricetag -->
               </div>
@@ -510,7 +507,7 @@
               <div class="team__card-title">
                 <h3 class="card__team">Алиса Сухорукова</h3>
                 <h4 class="team__card-info">Дизайнер</h4>
-                <strong class="card__standing types__card--standing animate__animated animate__zoomIn">
+                <strong class="card__standing types__card--standing ">
                   ОПыт работы 6 лет
                 </strong> <!-- /.card__standing -->
               </div>
@@ -531,7 +528,7 @@
                 <h3 class="card__team">Давид Волынев</h3>
                 <h4 class="team__card-info">Бригадир</h4>
                 
-                <strong class="card__standing types__card--standing animate__animated animate__zoomIn">
+                <strong class="card__standing types__card--standing ">
                   ОПыт работы 7 лет
                 </strong> <!-- /.card__standing -->
               </div>
@@ -717,18 +714,13 @@
           <!-- /.nav -->
           <div class="contacts menu__contacts">
             <a href="tel:+79997683299" class="phone contacts__phone  ">+7 (999) 768-32-99</a>
-            <button class="button contacts-button button--primary animate__animated  animate__tada" data-toggle="modal" >Заказать звонок</button>
+            <button class="button contacts-button button--primary" data-toggle="modal" >Заказать звонок</button>
           </div>
         </div>
         <!-- /.menu -->
       </div>
     </div>
   </footer>
-  <div class="thank">
-    <p class="thank__text">
-      ЗАЯВКА ОТПРАВЛЕНА,<br> МЫ вам перезвоним через 15 минут
-    </p>
-  </div>
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
@@ -736,20 +728,20 @@
       <h2 class="modal__title">
         Оставьте заявку и наш менеджер свяжется с вами 
       </h2>
-      <form action="send.php" class="form modal__form" >
+      <form action="#" class="form modal__form" >
         <div class="input-group modal__input-group">
-          <label for="modal-user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input" id="modal-user-name" placeholder="Как вас зовут:" >
+          <label for="user-name" class="label form__label label--light">Имя</label>
+          <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:" >
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона:">
+          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="modal-user-email" class="label form__label label--light" >Email</label>
-          <input type="text" name="userEmail" class="input form__input modal__input" placeholder="Ваш email" id="modal-user-email">
+          <label for="user-email" class="label form__label label--light" id="user-phone">Email</label>
+          <input type="text" name="userEmail" class="input form__input modal__input" placeholder="Ваш email">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy">
@@ -769,10 +761,14 @@
     <!-- /.modal_dialog -->
   </div>
   <!-- /.modal modal__dialog -->
+  <div class="thank">
+    <p class="thank__text">
+      ЗАЯВКА ОТПРАВЛЕНА,<br> МЫ вам перезвоним через 15 минут
+    </p>
+  </div>
   <button class="back-to-top"></button>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
