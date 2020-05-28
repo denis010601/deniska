@@ -1177,6 +1177,7 @@ template {
   .footer__policy {
     margin-top: 2.1rem;
     margin-bottom: 3.4rem;
+    align-items: center;
     flex-basis: 100%;
     font-style: normal;
     font-weight: normal;
@@ -1416,6 +1417,13 @@ template {
   font-weight: normal;
   font-style: normal;
   flex-direction: swap; }
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: local("Yeseva One"), local("YesevaOne"), url("../fonts/yeseva/yesevaone.woff2") format("woff2"), url("../fonts/yeseva/yesevaone.woff") format("woff"), url("../fonts/yeseva/yesevaone.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
 
 *, *:before, *:after {
   box-sizing: border-box; }

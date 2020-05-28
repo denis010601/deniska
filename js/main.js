@@ -154,6 +154,7 @@ $(document).ready(function (){
           required: true,
           minlength: 2
         },
+        
         userPhone: "required",
         // compound rule
         userQuestion: "required",
@@ -171,6 +172,7 @@ $(document).ready(function (){
           userPhone: "Телефон обязателен",
           userQuestion: "Задайте вопрос",
         checkbox: "Примите соглашение"
+        
     },
     submitHandler: function(form) {
       $.ajax ({

@@ -6,6 +6,7 @@ const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const htmlmin = require('gulp-htmlmin');
 const minify = require('gulp-minify') 
+const closureCompiler = require('gulp-closure-compiler');
 
 function bs() {
   serveSass();

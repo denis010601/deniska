@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=2e625b5a-8eaf-480f-b595-48df5746b204
-  &lang=ru_RU" type="text/javascript"></script>
+  
   <title>турецкий ремонт в Ростове-на-дону</title>
 </head>
 <body>
@@ -57,7 +55,7 @@
         <div class="row project__row">
           <div class="col col-secion-project">
             <div class="section-title section-title--left animate__animated  ">
-              <h2 id="section-title-heading" class="section-title-control__heading section-title-control__heading--primary">Завершенные 
+              <h2  class="section-title-control__heading section-title-control__heading--primary">Завершенные 
                 <span class="section-title__word">
                   ПРоекты
                 </span></h2>
@@ -65,7 +63,7 @@
               <p class="section-title-control__text">
                 На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей
               </p>
-              <!-- /.section--title-text ptoject__section--title-text -->
+              <!-- /.section-title-textptoject__section-title-text -->
               
               <!-- /.section-title__image -->
             </div>
@@ -157,14 +155,14 @@
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
                     <div class="swiper-slide">
-                      <img src="img/project.jpg" alt="фото проекта">
+                      <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/project.jpg" alt="фото проекта">
                     </div>
             
                   <div class="swiper-slide">
-                    <img src="img/project.jpg" alt="фото проекта">
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/project.jpg" alt="фото проекта">
                   </div>
                   <div class="swiper-slide">
-                    <img src="img/project.jpg" alt="фото проекта">
+                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/project.jpg" alt="фото проекта">
                   </div>
               </div>
           </div>
@@ -175,7 +173,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.sectuiob--dark project -->
+    <!-- /.sectuiob-darkproject -->
     <section class="section conrtol control__section">
       <div class="container">
         <div class="section-title control__section-title">
@@ -184,8 +182,6 @@
           <div class="section-title__image ">
             <img src="img/video.svg" alt="video" >
           </div>
-          
-  
         </div>
         <!-- /.section-title -->
         <div class="control__video video animate__animated ">
@@ -195,15 +191,15 @@
         <p class="title-text control__title-text">
           На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form" >
+        <form action="send.php" class="form control__form" >
           <div class="input-group control__input-group">
-            <label for="user-name" class="label form__label control__label ">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:" >
+            <label for="control-user-name" class="label form__label control__label ">Имя</label>
+            <input type="text" name="userName" class="input form__input control__input" id="control-user-name" placeholder="Как вас зовут:" >
           </div>
           <!-- /.control__input-group -->
           <div class="input-group control__input-group">
-            <label for="user-phone" class="label form__label control__label ">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="control-user-phone" class="label form__label control__label ">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input control__input" id="control-user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.control__input-group -->
           
@@ -212,22 +208,22 @@
           <button class="button button--primary control__button">
             Отправить 
           </button> 
-          <!-- /.button button--primary control__button -->
+          <!-- /.buttonbutton-primarycontrol__button -->
           <div class="policy control__policy">
             <input type="checkbox" name="checkbox" class="policy__checkbox"  id="control-policy-checkbox" checked>
             <label for="control-policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
-      </div>
-      <!-- /.modal_dialog -->
+          <!-- /.modal_dialog -->
+        
         </form>
-      </div>
+      </div>  
       <!-- /.container -->
     </section>
     <!-- /.section conrtol -->
     <section class="section types ">
       <div class="container">
         <div class="section-title types__section-title">
-          <h2 id="section-title-heading" class="section-title-heading">Виды ремонта</h2>
+          <h2  class="section-title-heading">Виды ремонта</h2>
           <!-- /.section-title-heading -->
           <div class="section-title__image">
             <img src="img/repair.svg" alt="repair"> 
@@ -237,7 +233,7 @@
         <div class="row types types__row">
           <div class="col col-32">
             <div class="card types__card">
-              <img src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title ">Косметический ремонт</h3>
                 <!-- /.card__title -->
@@ -269,7 +265,7 @@
           <!-- /.col -->
           <div class="col col-32">
             <div class="card types__card">
-              <img src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
                 <!-- /.card__title -->
@@ -301,7 +297,7 @@
           <!-- /.col -->
           <div class="col col-32">
             <div class="card types__card">
-              <img src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
                 <!-- /.card__title -->
@@ -338,15 +334,15 @@
     <!-- /.section title -->
     <section class="section design">
       <div class="container">
-            <strong class="section-title design__section-title">
-              <h2 id="section-title-heading" class="section-title-heading">Дизайн проект</h2>
+            <div class="section-title design__section-title">
+              <h2  class="section-title-heading">Дизайн проект</h2>
               <!-- /.section-title-heading -->
               <div class="section-title__image">
                 <img src="img/design.svg" alt="design">
               </div>
               <!-- /.section-title__image -->
               
-            </strong>
+            </div>
             <p class="section-info design__section-info">
               Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ
             </p> <!-- /.section-info design__section-info -->
@@ -354,7 +350,7 @@
             <div class="row design design__row">
               <div class="col design__col col-32 ">
                 <div class="card design__card">
-                  <img src="img/type-1.jpg" alt="Минимальный" class="card__image design__card-image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-1.jpg" alt="Минимальный" class="card__image design__card-image">
                   <div class="card__text">
                     <h3 class="card__title">Минимальный</h3>
                     <!-- /.card__title -->
@@ -380,7 +376,7 @@
               <!-- /.col -->
               <div class="col design__col col-32">
                 <div class="card design__card">
-                  <img src="img/type-3.jpg" alt="Стандартный" class="card__image design__card-image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-3.jpg" alt="Стандартный" class="card__image design__card-image">
                   <div class="card__text">
                     <h3 class="card__title">Стандартный</h3>
                     <!-- /.card__title -->
@@ -412,7 +408,7 @@
               <!-- /.col -->
               <div class="col design__col col-32">
                 <div class="card design__card">
-                  <div class=""><img src="img/type-3.1.jpg" alt="Полный" class="card__image design__card-image"></div>
+                  <div class=""><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/type-3.1.jpg" alt="Полный" class="card__image design__card-image"></div>
                   <div class="card__text">
                     <h3 class="card__title">Полный</h3>
                     <!-- /.card__title -->
@@ -462,7 +458,7 @@
     <section class="section team">
       <div class="container">
         <div class="section-title ">
-          <h2 id="section-title-heading" class="section-title-heading team__section-title-heading">Наша команда</h2>
+          <h2  class="section-title-heading team__section-title-heading">Наша команда</h2>
           <!-- /.section-title-heading -->
           <div class="section-title__image">
             <img src="img/team.svg" alt="team"> 
@@ -478,8 +474,8 @@
             <div class="card team__card">
               <div class="card__image">
                 <img src="img/teams-icon1.svg" class="team__teams-icon" alt="иконка должности">
-                <img src="img/team1.jpg"  class="team__desktop" alt=">Алексей Колмаков" >
-                <img src="img/team1-min.jpg" class="team__mobile"  alt="Алексей Колмаков">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team1.jpg"  class="team__desktop" alt=">Алексей Колмаков" >
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team1-min.jpg" class="team__mobile"  alt="Алексей Колмаков">
               </div>
               <!-- /.class="card__image" -->
               
@@ -500,8 +496,8 @@
             <div class="card team__card">
               <div class="card__image">
                 <img src="img/teams-icon2.svg" class="team__teams-icon" alt="иконка должности">
-                <img src="img/team2.jpg" class="team__desktop" alt=">Алиса Сухорукова" >
-                <img src="img/team2-min.jpg" class="team__mobile"  alt="Алиса Сухорукова">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team2.jpg" class="team__desktop" alt=">Алиса Сухорукова" >
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team2-min.jpg" class="team__mobile"  alt="Алиса Сухорукова">
               </div>
               <!-- /.class="card__image" -->
               <div class="team__card-title">
@@ -520,8 +516,8 @@
             <div class="card team__card">
               <div class="card__image">
                 <img src="img/teams-icon3.svg" class="team__teams-icon" alt="иконка должности">
-                <img src="img/team3.jpg" class="team__desktop" alt=">Давид Волынев" >
-                <img src="img/team3-min.jpg" class="team__mobile"  alt="Давид Волынев">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team3.jpg" class="team__desktop" alt=">Давид Волынев" >
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/team3-min.jpg" class="team__mobile"  alt="Давид Волынев">
               </div>
               <!-- /.class="card__image" -->
               <div class="team__card-title">
@@ -549,7 +545,7 @@
     <section class="section client">
       <div class="container">
         <div class="section-title ">
-          <h2 id="section-title-heading" class="section-title-heading client__section-title-heading">Наши клиенты</h2>
+          <h2  class="section-title-heading client__section-title-heading">Наши клиенты</h2>
           <!-- /.section-title-heading -->
           <div class="section-title__image">
             <img src="img/client.svg" alt="client"> 
@@ -653,18 +649,18 @@
         </h2>
         <form action="#" class="form footer__form" >
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" name="userName" class="input form__input footer__input" id="user-name" placeholder="Как вас зовут:" >
+            <label for="footer-user-name" class="label form__label label--light">Имя</label>
+            <input type="text" name="userName" class="input form__input footer__input" id="footer-user-name" placeholder="Как вас зовут:" >
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input footer__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input footer__input" id="footer-user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-question" class="label form__label label--light" id="user-phone">Вопрос</label>
-            <input type="text" name="userquestion" class="input form__input footer__input" placeholder="Я хочу спросить">
+            <label for="footer-user-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" name="userQuestion" class="input form__input footer__input" id="footer-user-question" placeholder="Я хочу спросить">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="policy footer__policy">
@@ -675,7 +671,7 @@
           <button class="button button--primary footer__button">
             Отправить
           </button> 
-          <!-- /.button button--primary footer__button -->
+          <!-- /.buttonbutton-primaryfooter__button -->
   
         </form>
         <!-- /.form footer__form -->
@@ -728,20 +724,20 @@
       <h2 class="modal__title">
         Оставьте заявку и наш менеджер свяжется с вами 
       </h2>
-      <form action="#" class="form modal__form" >
+      <form action="send.php" class="form modal__form" >
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:" >
+          <label for="modal-user-name" class="label form__label label--light">Имя</label>
+          <input type="text" name="userName" class="input form__input modal__input" id="modal-user-name" placeholder="Как вас зовут:" >
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+          <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light" id="user-phone">Email</label>
-          <input type="text" name="userEmail" class="input form__input modal__input" placeholder="Ваш email">
+          <label for="modal-user-email" class="label form__label label--light" >Email</label>
+          <input type="text" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy">
@@ -752,7 +748,7 @@
         <button class="button button--primary modal__button">
           Отправить заявку
         </button> 
-        <!-- /.button button--primary modal__button -->
+        <!-- /.buttonbutton-primarmodal__button -->
 
       </form>
       <!-- /.form modal__form -->
@@ -767,10 +763,20 @@
     </p>
   </div>
   <button class="back-to-top"></button>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2e625b5a-8eaf-480f-b595-48df5746b204&lang=ru_RU"  ></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for (var i=0; i<imgDefer.length; i++) {
+    if(imgDefer[i].getAttribute('data-src')) {
+    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+    } } }
+    window.onload = init;
+    </script>
 </body>
 </html>
